@@ -1,11 +1,11 @@
 {
-  "name": "fruist",
+  "name": "Work-flou1",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/fruist/",
+    "build": "vite build --base=/Work-flou1/",
     "preview": "vite preview"
   },
   "devDependencies": {
