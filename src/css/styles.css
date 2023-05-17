@@ -5,21 +5,11 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./variables.css');
+@import url('./mobile-burger.css');
+@import url('./order.css');
 @import url('./vite-promo.css');
 @import url('./header.css');
-
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+@import url('./how-it-works.css');
+@import url('./fruits.css');
+@import url('./footer.css');
