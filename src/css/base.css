@@ -1,5 +1,50 @@
 @font-face {
-  font-family: 'DMSuns-Bold';
-  src: url(./fonts/DMSans-Bold.ttf);
+  font-family: 'DM Sans', sans-serif;
+  src: local('/fonts/DMSans-Regular.ttf');
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: local('/fonts/DMSans-Medium.ttf');
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: local('/fonts/DMSans-Bold.ttf');
+  font-style: normal;
   font-weight: 700;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+/* Phone styles and > */
+.container {
+  min-width: 375px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* Tablet and > */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 704px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+}
+
+/* Desktop and > */
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1216px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
 }
