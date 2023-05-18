@@ -5,6 +5,7 @@
   |============================
 */
 @import url('./reset.css');
+@import url('./base.css');
 @import url('./variables.css');
 @import url('./mobile-burger.css');
 @import url('./order.css');
