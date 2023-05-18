@@ -20,12 +20,16 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
+  color: var(--color-white);
   background-color: var(--color-bg-red);
+  letter-spacing: -0.04em;
 }
+
+
 
 /* Phone styles and > */
 .container {
-  max-width: 375px;
+  max-width: 335px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;

@@ -5,4 +5,7 @@
   --color-green: #a4cb66;
   --color-yelow: #f5ce13;
   --color-white: #ffffff;
+
+  /* shadows */
+  --var-1-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
