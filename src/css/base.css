@@ -20,8 +20,12 @@
 
 body {
   font-family: 'DM Sans', sans-serif;
+  color: var(--color-white);
   background-color: var(--color-bg-red);
+  letter-spacing: -0.04em;
 }
+
+
 
 /* Phone styles and > */
 .container {
