@@ -25,11 +25,9 @@ body {
   letter-spacing: -0.04em;
 }
 
-
-
 /* Phone styles and > */
 .container {
-  max-width: 335px;
+  max-width: 375px;
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
@@ -39,7 +37,7 @@ body {
 /* Tablet and > */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -48,8 +46,6 @@ body {
 /* Desktop and > */
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1216px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 1280px;
   }
 }
