@@ -2,6 +2,11 @@
 
 /* Document
    ========================================================================== */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
 /**
  * 1. Correct the line height in all browsers.
