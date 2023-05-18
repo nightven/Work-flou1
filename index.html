@@ -6,11 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/Work-flou1/assets/index-fac82e35.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-d81a47a7.css">
+    <script type="module" crossorigin src="/Work-flou1/assets/index-ddbebb10.js"></script>
+    <link rel="stylesheet" href="/Work-flou1/assets/index-5065016c.css">
   </head>
   <body>
-    
+    <header class="header">
+  <div class="header-container container">
+    <!-- Nav -->
+
+    <nav class="header-nav">
+      <ul class="menu">
+        <li>
+          <a class="menu-link menu-font" href="#how-it-works">How It Works</a>
+        </li>
+        <li>
+          <a class="menu-link menu-font" href="#fruits">Fruits</a>
+        </li>
+        <li>
+          <a class="menu-link menu-font" href="#contacts">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- logo -->
+    <div class="logo">
+      <a class="logo-img link" href="" aria-label="FruitsShop logo">
+        <svg class="logo-svg" width="16" height="16">
+          <use href="/Work-flou1/assets/icons-371c0fd4.svg#logo"></use>
+        </svg>
+      </a>
+
+      <a class="logo-name link" href="./index.html">Fresh Harvest Box</a>
+    </div>
+
+    <!-- Кошик (кнопка-меню) -->
+    <!-- provided shopping-menu -->
+    <button class="basket-btn" type="button" data-modal-open>
+      <svg class="basket-icon" width="24" height="24">
+        <use class="" href="/Work-flou1/assets/icons-371c0fd4.svg#basket"></use>
+      </svg>
+    </button>
+
+    <!-- Бургер-кнопка-меню -->
+
+    <button
+      class="menu-toggle js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="burger-icon" width="24" height="24">
+        <use class="" href="/Work-flou1/assets/icons-371c0fd4.svg#burger-left"></use>
+      </svg>
+    </button>
+  </div>
+</header>
 
     <main>
       <section class="section hero-section">
@@ -252,6 +302,39 @@
     </main>
     
     
+    <div class="backdrop background-menu-hamburger is-hidden" mobile-burger-menu>
+    <div class="menu-container">
+        <div class="menu-hamburger-top">
+            <a class="top-logo" href="./index.html">
+                <svg class="nav-logo" width="16" height="16">
+                  <use href="/Work-flou1/assets/icons-7cc7c82e.svg#icon-logo"></use>
+                </svg>
+                <span class="menu-hamburger-title">fresh harvest box</span>
+            </a>
+            <button class="menu-btn close-btn" mobile-burger-menu-close>
+                <svg class="menu-close" width="24" height="24">
+                  <use href="/Work-flou1/assets/icons-7cc7c82e.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+        <ul class="list menu-hamburger-list">
+            <li class="item menu-hamburger-item">
+                <a href="#how-it-works">How It Works</a>
+            </li>
+            <li class="item menu-hamburger-item">
+                <a href="#fruits">Fruits</a>
+            </li>
+            <li class="item menu-hamburger-item">
+                <a href="#contacts">Contacts</a>
+            </li>
+        </ul>
+        <button class="menu-btn basket-btn" type="button">
+            <svg class="icon-basket" width="24" height="24">
+              <use href="/Work-flou1/assets/icons-7cc7c82e.svg#icon-basket"></use>
+            </svg>
+        </button>
+    </div>
+</div>
 
     <!-- Loads the specified .html file -->
 
