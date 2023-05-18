@@ -1,5 +1,16 @@
 @font-face {
-  font-family: 'DMSuns-Bold';
-  src: url(./fonts/DMSans-Bold.ttf);
+  font-family: 'DM Sans', sans-serif;
+  src: local(./fonts/DMSans-Regular.ttf);
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: local(./fonts/DMSans-Medium.ttf);
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'DM Sans', sans-serif;
+  src: local(./fonts/DMSans-Bold.ttf),
+    url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
   font-weight: 700;
 }
