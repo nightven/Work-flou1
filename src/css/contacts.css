@@ -1,0 +1,68 @@
+.section-contacts {
+  padding-bottom: 80px;
+}
+.container {
+}
+.contacts-header {
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (min-width: 768px) {
+  .contacts-header {
+    max-width: 648px;
+    height: 108px;
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 1;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts-header {
+    width: 740px;
+    height: 128px;
+    font-size: 64px;
+  }
+}
+.contacts-list {
+  display: flex;
+}
+@media only screen and (min-width: 768px) {
+  .contacts-list {
+    gap: 16px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .contacts-list {
+    gap: 24px;
+  }
+}
+
+.contacts-item {
+}
+
+@media only screen and (max-width: 767px) {
+  .contacts-item-hidden {
+    display: none;
+  }
+}
+
+.contacts-img {
+  border-radius: 20px;
+  background: url(pranav-madhu-HCIOaDV3w7g-unsplash.jpg);
+}
+.contacts-text {
+  width: 492px;
+  height: 54px;
+  font-size: 14px;
+  line-height: 1.29px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.04em;
+  color: #ffffff;
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  margin-bottom: 80px;
+}
