@@ -94,15 +94,14 @@
 }
 
 .works-image-wrapper {
-    position: relative;
     width: 100%;
     height: 476px;
 
     border-radius: 20px;
 
     overflow: hidden;
-}
 
-.works-image {
-    position: absolute;
+    background-image: url('../img/how-it-works/how-it-works.gif.gif');
+    background-size: cover;
+    background-position: 30%;
 }
