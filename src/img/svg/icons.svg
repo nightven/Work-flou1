@@ -27,5 +27,12 @@
 <symbol id="icon-arrow" viewBox="0 0 32 32">
 <path d="M32 4.741l-4.741-4.741v23.704l-23.704-23.704-3.556 3.556 23.704 23.704h-23.704l4.741 4.741h27.259v-27.259z"></path>
 </symbol>
+<symbol id="icon-checkbox" viewBox="0 0 32 32">
+<path d="M26.151 1.405c0.992-1.463 2.982-1.845 4.444-0.853s1.845 2.982 0.853 4.444l-17.356 25.6c-1.269 1.872-4.028 1.872-5.297 0l-8.244-12.16c-0.992-1.463-0.61-3.453 0.853-4.444s3.453-0.61 4.444 0.853l5.595 8.253 14.707-21.693z"></path>
+</symbol>
+<symbol id="modal-button" viewBox="0 0 32 32">
+<path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+<path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+</symbol>
 </defs>
 </svg>
