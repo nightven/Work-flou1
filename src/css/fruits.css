@@ -42,8 +42,6 @@
   font-size: 24px;
   line-height: 1.17;
 
-  display: flex;
-  align-items: center;
   letter-spacing: -0.04em;
 
   color: var(--color-white);
@@ -55,14 +53,14 @@
   line-height: 18px;
   /* identical to box height, or 129% */
 
-  display: flex;
-  align-items: center;
   letter-spacing: -0.02em;
 
   color: var(--color-white);
 }
 
 .fruits-price {
+  position: absolute;
+  bottom: 24px;
   width: 126px;
   height: 42px;
   border-radius: 200px;
@@ -81,6 +79,7 @@
 }
 
 .fruits-item {
+  position: relative;
   border-radius: 20px;
   padding-top: 64px;
   padding-right: 20px;
@@ -144,14 +143,17 @@
   background-color: #98b37e;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1279px) {
   .kiwi {
     display: none;
   }
 }
 
 .button-order {
-  display: block;
+  display: flex;
+  gap: 4px;
+  justify-content: center;
+  align-items: center;
   margin-right: auto;
   margin-left: auto;
   width: 80px;
@@ -164,13 +166,35 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.29;
-  /* identical to box height, or 129% */
-
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
   transform: rotate(-14deg);
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (min-width: 768px) {
+  .button-order {
+    width: 114px;
+    height: 114px;
+    font-size: 18px;
+    line-height: 1.33;
+  }
+}
+
+.icon-arrow {
+  fill: currentColor;
+}
+
+.button-order:hover,
+.button-order:focus {
+  color: var(--color-green);
+  background-color: var(--color-white);
+}
+
+.icon-arrow:hover,
+.icon-arrow:focus {
+  fill: var(--color-green);
 }
 
 .fruits-list {
