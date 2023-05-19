@@ -28,20 +28,26 @@
     </div>
 
     <!-- Кошик (кнопка-меню) -->
-    <!-- provided shopping-menu -->
-    <button class="basket-btn" type="button" data-modal-open>
-      <svg class="basket-icon" width="24" height="24">
+
+    <!-- for provided shopping-menu -> add: 'data-modal-open' -->
+    <button class="basket-btn" type="button">
+      <svg class="basket-icon" width="28" height="28">
+
         <use class="" href="./img/icons.svg#basket"></use>
       </svg>
     </button>
 
     <!-- Бургер-кнопка-меню -->
 
-    <button
-      class="menu-toggle"
+    <button class="menu-toggle" type="button" data-mobile-menu-open>
+      <!-- Варіант для вікна, яке виїжджає збоку: -->
+      <!-- <button
+      class="menu-toggle js-open-menu"
       type="button"
-      data-mobile-menu-open
-    >
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    > -->
+
       <svg class="burger-icon" width="24" height="24">
         <use class="" href="./img/icons.svg#burger-left"></use>
       </svg>
