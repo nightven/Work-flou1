@@ -1,5 +1,9 @@
 .thank-wrapper {
-  position: relative;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: block;
   margin: 0 auto;
   padding-top: 40px;
@@ -8,7 +12,7 @@
   background: #e03f5e;
   border-radius: 20px;
 }
-.icon-box {
+.thank-button {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -22,15 +26,22 @@
 
   border: none;
   color: var(--color-white);
-  background-size: cover;
+  background: #e03f5e;
+  background-size: contain;
 }
 .thank-close-btn {
   display: flex;
   text-align: center;
   justify-content: center;
   background-size: contain;
-  fill: currentColor;
-  color: currentColor;
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 .thank-img {
   text-align: center;
