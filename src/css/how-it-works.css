@@ -186,7 +186,7 @@
 }
 
 .works-item-text {
-    width: 145px;
+    max-width: 145px;
 
     font-weight: 400;
     font-size: 14px;
@@ -199,17 +199,17 @@
 /* Tablet Works-Item-Text */
 @media screen and (min-width: 768px) {
     .works-item-text {
-        width: 199px;
+        max-width: 199px;
     }
 }
 
 /* PC Works-Item-Text */
 @media screen and (min-width: 1280px) {
     .works-item-text {
-        width: 166px;
+        max-width: 166px;
     }
     .third-works-item-text {
-        width: 199px;
+        max-width: 199px;
     }
 }
 
