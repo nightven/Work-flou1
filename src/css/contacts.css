@@ -1,9 +1,22 @@
 .section-contacts {
   padding-bottom: 80px;
+  position: relative;
 }
-.container {
+.section-contacts .container {
+  padding-top: 79px;
 }
+
 .contacts-header {
+  position: absolute;
+
+  margin-bottom: -30px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 54px;
+  line-height: 54px;
+
   align-items: center;
   text-align: center;
   letter-spacing: -0.04em;
@@ -28,6 +41,7 @@
   }
 }
 .contacts-list {
+  margin-top: 79px;
   display: flex;
 }
 @media only screen and (min-width: 768px) {
