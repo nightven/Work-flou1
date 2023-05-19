@@ -12,12 +12,12 @@
     
     background-color: var(--color-bg-red);
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(0);
+    transform: translateX(100%);
 }
 
     
-.is-hidden {
-    transform: translateX(100%);
+.menu-container.is-hidden {
+    transform: translateX(0);
   }
 
 .menu-hamburger-top {
@@ -51,6 +51,11 @@
     padding: 0;
     width: 24px;
     height: 24px;
+    color: var(--color-bg-red);
+}
+
+.menu-close {
+   stroke: currentColor; 
 }
 
 .menu-hamburger-title {
