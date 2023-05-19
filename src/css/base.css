@@ -49,6 +49,7 @@ body {
 /* Phone styles and > */
 .container {
   max-width: 375px;
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;

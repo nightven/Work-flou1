@@ -3,7 +3,7 @@ document.addEventListener(
   'DOMContentLoaded',
   function () {
     // виберіть ваше меню тут
-    const modals = ['mobile-burger-menu', 'your-order', 'thank-you'];
+    const modals = ['data-mobile-menu', 'data-order', 'data-thank-you'];
 
     modals.forEach(element => {
       // дл відкриття модалки на кнопку  додаємо атрибут "your-data-modal"-open
