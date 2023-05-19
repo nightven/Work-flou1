@@ -5,9 +5,10 @@
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+
     
     <script type="module" crossorigin src="/Work-flou1/assets/index-54bd73d8.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-dd576fe7.css">
+    <link rel="stylesheet" href="/Work-flou1/assets/index-dcf68d47.css">
   </head>
   <body>
     <header class="header">
@@ -41,7 +42,7 @@
 
     <!-- Кошик (кнопка-меню) -->
     <!-- provided shopping-menu -->
-    <button class="basket-btn" type="button" data-modal-open>
+    <button class="basket-btn" type="button">
       <svg class="basket-icon" width="24" height="24">
         <use class="" href="./img/icons.svg#basket"></use>
       </svg>
@@ -49,11 +50,8 @@
 
     <!-- Бургер-кнопка-меню -->
 
-    <button
-      class="menu-toggle"
-      type="button"
-      data-mobile-menu-open
-    >
+    <button class="menu-toggle" type="button" data-mobile-menu-open>
+
       <svg class="burger-icon" width="24" height="24">
         <use class="" href="./img/icons.svg#burger-left"></use>
       </svg>
@@ -65,7 +63,8 @@
       <section class="section hero-section">
   <div class="container">
     <h1 class="hero-title">
-      fresh harvest box is your one-stop place for a delicious fruit basket
+      fresh harvest box<br />
+      is your 0ne-stop place for a delicious fruit basket
     </h1>
     <div class="hero-left">
       <p class="hero-text">
@@ -76,7 +75,7 @@
       <div class="wraper-left">
         <span class="text">Fruit</span>
         <img
-          src="/Work-flou1/assets/img-1_desk@1x-c97235b0.png"
+          src="/Work-flou1/assets/img-1_desk@1x-bdeafde7.png"
           alt="watermelon"
           width="200"
           height="172"
@@ -88,17 +87,34 @@
       </div>
     </div>
     <div class="hero-center">
-      <img
-        class="hero-img"
-        src="/Work-flou1/assets/hero_desk@1x-cd733270.jpg"
-        alt="girl with orange"
-      />
+      <picture>
+        <source
+          media="(min-width: 1280px)"
+          srcset="/Work-flou1/assets/hero_desk@1x-cd733270.jpg "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="/Work-flou1/assets/hero_desk@1x-cd733270.jpg "
+        />
+        <img
+          class="hero-img"
+          srcset="/Work-flou1/assets/hero_mobile@2x-c40611ff.jpg 2x"
+          src="/Work-flou1/assets/hero_mobile@1x-15986808.jpg"
+          alt="girl with orange"
+        />
+      </picture>
+
       <a class="link btn-link" href="">Shop Now</a>
     </div>
     <div class="hero-right">
-      <div class="wraper-left">
+      <div class="wraper-right">
         <span class="text">Fruit</span>
-        <img src="/Work-flou1/assets/img-2_desk@1x-765c0992.png" alt="strawberyy" />
+        <img
+          src="/Work-flou1/assets/img-2_desk@1x-8e9f9078.png"
+          alt="strawberyy"
+          width="162"
+          height="194"
+        />
         <p class="hero-subtitle">
           Sweet and juicy, strawberries are packed with vitamin C and
           antioxidants, making them a delicious and healthy snack
@@ -109,13 +125,13 @@
           <a href="#" class="link hero-link">#organic</a>
         </li>
         <li class="hero-link-item">
-          <a href="#" class="link hero-link">#Products</a>
+          <a href="#" class="link hero-link hero-link-m">#Products</a>
         </li>
         <li class="hero-link-item">
           <a href="#" class="link hero-link">#Basket</a>
         </li>
         <li class="hero-link-item">
-          <a href="#" class="link hero-link">#Fruits</a>
+          <a href="#" class="link hero-link hero-link-m">#Fruits</a>
         </li>
       </ul>
     </div>
