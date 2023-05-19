@@ -1,6 +1,5 @@
 <section class="section-contacts">
-  <div class="container">
-
+  <div class="container contacts">
     <h3 class="contacts-header">Fresh Harvest Box has got you covered</h3>
     <ul class="contacts-list">
       <li class="contacts-item">
@@ -17,7 +16,7 @@
               ./img/contacts/img-1@1x_tab.jpg 1x,
               ./img/contacts/img-1@2x_tab.jpg 2x
             "/>     
-            <img class="contacts-img" srcset="./img/contacts/img-1@1x_mob.jpg 1x, ./img/contacts/img-1@2x_mob.jpg 2x" src="./img/contacts/img-1@1x_mob.jpg" alt="melon" width="335" height="476" />
+            <img class="contacts-img" srcset="./img/contacts/img-1@1x_mob.jpg 1x, ./img/contacts/img-1@2x_mob.jpg 2x" src="./img/contacts/img-1@1x_mob.jpg" alt="melon" />
             </picture>            
       </li>
       <li class="contacts-item contacts-item-hidden">
@@ -25,8 +24,8 @@
             <source
              media="(min-width: 1280px)"
              srcset="
-              ./img/contacts/img-1@1x_desc.jpg 1x,
-              ./img/contacts/img-1@2x_desc.jpg 2x"/></picture>
+              ./img/contacts/img-2@1x_desc.jpg 1x,
+              ./img/contacts/img-2@2x_desc.jpg 2x"/></picture>
             <source media="(min-width: 768px)"
             srcset="
               ./img/contacts/img-2@1x_tab.jpg 1x,
@@ -36,21 +35,18 @@
               ./img/contacts/img-2@1x_mob.jpg 1x,
               ./img/contacts/img-2@2x_mob.jpg 2x
             "/>
-            <img class="contacts-img" srcset="./img/contacts/img-1@1x_tab.jpg 1x, ./img/contacts/img-2@2x_tab.jpg 2x" src="./img/contacts/img-2@1x_tab.jpg" alt="melon" width="344" height="480" />
+            <img class="contacts-img" srcset="./img/contacts/img-2@1x_tab.jpg 1x, ./img/contacts/img-2@2x_tab.jpg 2x" src="./img/contacts/img-2@1x_tab.jpg" alt="melon" />
         </picture>        
-      </li>    
-
+      </li> 
     </ul>
-    <p class="contacts-text">
-      Our boxes are packed with delicious, nutritious fruits and vegetables,
-      perfect for anyone looking to eat healthier or support local farmers.
-      Order your box today and start enjoying the best that nature has to offer!
-    </p>
-
-    <form name="subscribe" autocomplete="on">
-      <input type="email" name="email" placeholder="Enter email..." />
-      <button type="submit">Send</button>
-
-    </form>
+    <div class="contacts-wrapper">
+      <p class="contacts-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
+      </p>
+      <form name="subscribe" class="contacts-form" autocomplete="on">
+        <label class="visually-hidden" for="email">Email</label>
+        <input type="email" name="email" class="contacts-input" id="email" placeholder="Enter email..." />
+        <button type="submit" class="contacts-button">Send</button>
+      </form>
+    </div>
   </div>
 </section>
