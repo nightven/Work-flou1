@@ -41,12 +41,12 @@
   }
 }
 .contacts-list {
-  margin-top: 79px;
   display: flex;
 }
 @media only screen and (min-width: 768px) {
   .contacts-list {
     gap: 16px;
+    margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -69,8 +69,8 @@
   background: url(pranav-madhu-HCIOaDV3w7g-unsplash.jpg);
 }
 .contacts-text {
-  width: 492px;
-  height: 54px;
+  /* width: 492px; */
+  display: inline-block;
   font-size: 14px;
   line-height: 1.29px;
   align-items: center;
