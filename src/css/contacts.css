@@ -1,4 +1,5 @@
 .section-contacts {
+  position: relative;
   padding-bottom: 80px;
 }
 .section-contacts .container {

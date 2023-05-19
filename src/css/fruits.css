@@ -201,11 +201,18 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
+  margin-bottom: 30px;
   justify-content: center;
 }
 
 @media only screen and (min-width: 768px) {
   .fruits-list {
     gap: 16px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-list {
+    margin-bottom: 44px;
   }
 }
