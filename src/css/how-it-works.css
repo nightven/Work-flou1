@@ -1,28 +1,32 @@
 .works {
     padding-bottom: 80px;
-    color: var(--color-white);
 }
 
-.works-h1-title {
+.works-title {
     display: block;
     max-width: 335px;
     height: auto;
+    margin-bottom: 14px;
+
     font-weight: 500;
-    font-size: 40px;
-    line-height: 1.1;
+    font-size: 28px;
+    line-height: 1.0;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 14px;
+
+    text-shadow: var(--var-1-shadow);
 }
 
 .works-desc {
-    display: block;
     max-width: 509px;
+    margin-bottom: 44px;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
-    margin-bottom: 44px;
+
+    text-shadow: var(--var-1-shadow);
 }
 
 .works-list {
@@ -32,7 +36,9 @@
 
 .works-item {
     width: 100%;
+
     border-radius: 20px;
+
     background-color: var(--color-white);
 }
 
@@ -42,48 +48,60 @@
 
 .works-item-wrapper {
     display: flex;
-    gap: 14px;
-    padding: 20px;
     justify-content: center;
     align-items: center;
+    gap: 14px;
+    padding: 20px;
 }
 
-.works-h3-title-common-wrapper {
-    display: block;
+.works-item-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 136px;
+    height: 48px;
+
     border-radius: 200px;
-}
 
-.works-h3-title-wrapper-1 {
-    background-color: var(--color-bg-red);
-    padding: 12px 32px;
-}
-
-.works-h3-title-wrapper-2 {
-    background-color: var(--color-green);
-    padding: 12px 18px;
-}
-
-.works-h3-title-wrapper-3 {
-    background-color: var(--color-yelow);
-    padding: 12px 28px;
-}
-
-.works-h3-title {
     font-weight: 400;
     font-size: 18px;
     line-height: 1.33;
+
     color: var(--color-white);
+}
+
+.works-item-title.first-item-title {
+    background-color: var(--color-bg-red);
+}
+
+.works-item-title.second-item-title {
+    background-color: var(--color-green);
+}
+
+.works-item-title.third-item-title {
+    background-color: var(--color-yellow);
 }
 
 .works-item-text {
     width: 145px;
-    height: auto;
+
     font-weight: 400;
     font-size: 14px;
     line-height: 1.29;
+
     color: var(--color-black);
+    text-shadow: var(--var-1-shadow);
 }
 
-.works-image {
+.works-image-wrapper {
+    width: 100%;
     height: 476px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+
+    background-image: url('../img/how-it-works/how-it-works.gif');
+    background-size: cover;
+    background-position: 30%;
 }
