@@ -1,27 +1,29 @@
 @font-face {
   font-family: 'DM Sans';
-  src: local('/fonts/DMSans-Regular.ttf') format('truetype'),
-    local('/fonts/DMSans-Regular.woff') format('woff'),
-    local('/fonts/DMSans-Regular.woff2') format('woff2');
+  src: url('/fonts/DMSans-Regular.ttf') format('truetype'),
+    url('/fonts/DMSans-Regular.woff') format('woff'),
+    url('/fonts/DMSans-Regular.woff2') format('woff2');
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
 }
 @font-face {
   font-family: 'DM Sans';
-  src: local('/fonts/DMSans-Medium.ttf') format('truetype'),
-    local('/fonts/DMSans-Medium.woff') format('woff'),
-    local('/fonts/DMSans-Medium.woff2') format('woff2');
+  src: url('/fonts/DMSans-Medium.ttf') format('truetype'),
+    url('/fonts/DMSans-Medium.woff') format('woff'),
+    url('/fonts/DMSans-Medium.woff2') format('woff2');
   font-style: normal;
   font-weight: 500;
-  text-transform: uppercase;
+  font-display: swap;
 }
 @font-face {
   font-family: 'DM Sans';
-  src: local('/fonts/DMSans-Bold.ttf') format('truetype'),
-    local('/fonts/DMSans-Bold.woff') format('woff'),
-    local('/fonts/DMSans-Bold.woff2') format('woff2');
+  src: url('/fonts/DMSans-Bold.ttf') format('truetype'),
+    url('/fonts/DMSans-Bold.woff') format('woff'),
+    url('/fonts/DMSans-Bold.woff2') format('woff2');
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 .visually-hidden {
@@ -56,7 +58,7 @@ body {
 /* Tablet and > */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -65,8 +67,6 @@ body {
 /* Desktop and > */
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1216px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 1280px;
   }
 }
