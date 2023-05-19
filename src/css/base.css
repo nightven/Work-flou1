@@ -26,9 +26,30 @@
   font-display: swap;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+body {
+  font-family: 'DM Sans';
+  letter-spacing: -0.04em;
+  color: var(--color-white);
+  background-color: var(--color-bg-red);
+}
+
 /* Phone styles and > */
 .container {
   max-width: 375px;
+
   margin-right: auto;
   margin-left: auto;
   padding-left: 20px;
@@ -38,7 +59,7 @@
 /* Tablet and > */
 @media screen and (min-width: 768px) {
   .container {
-    max-width: 704px;
+    max-width: 768px;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -47,8 +68,6 @@
 /* Desktop and > */
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1216px;
-    padding-left: 32px;
-    padding-right: 32px;
+    max-width: 1280px;
   }
 }

@@ -1,0 +1,24 @@
+.go-top {
+    position: fixed;
+    right: 25px;
+    bottom: 50px;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;
+    color: #fff;
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 15px 10px;
+}
+
+
+.go-top:hover {
+    color: rgba(0, 51, 153, 0.8);
+    border: 1px solid #fff;
+    background-color: rgba(0, 51, 153, 0.15);
+}
+
+
+.go-top--show {
+    display: block;
+}
