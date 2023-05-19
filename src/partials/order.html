@@ -8,84 +8,96 @@
         </svg>
       </button>
     </div>
-    <fieldset class="modal-order-group-basket">
-      <label class="modal-order-label strawberry">
-        <p class="modal-order-text">Strawberry Basket</p>
-        <span class="modal-order-plant">Plant</span>
-        <img
-          class="modal-order-img"
-          src="./img/modal-order/img-strawberry.png"
-          alt="Strawberry Basket"
-          width="88"
-          height="95"
-        />
-        <input class="modal-order-checkbox" type="checkbox" name="basket" />
-        <span class="modal-order-checkbox-span">
-          <svg class="modal-order-icon" width="6" height="6">
-            <use href="./img/svg/icons.svg#icon-checkbox"></use>
-          </svg>
-        </span>
-      </label>
-      <label class="modal-order-label apple">
-        <p class="modal-order-text">Apple Basket</p>
-        <span class="modal-order-plant">Plant</span>
-        <img
-          class="modal-order-img"
-          src="./img/modal-order/img-apple.png"
-          alt="Apple Basket"
-          width="106"
-          height="95"
-        />
-        <input class="modal-order-checkbox" type="checkbox" name="basket" />
-        <span class="modal-order-checkbox-span">
-          <svg class="modal-order-icon" width="6" height="6">
-            <use href="./img/svg/icons.svg#icon-checkbox"></use>
-          </svg>
-        </span>
-      </label>
-      <label class="modal-order-label fruits">
-        <p class="modal-order-text">Fruits Basket</p>
-        <span class="modal-order-plant">Plant</span>
-        <img
-          class="modal-order-img"
-          src="./img/modal-order/img-fruits.png"
-          alt="Fruits Basket"
-          width="107"
-          height="95"
-        />
-        <input class="modal-order-checkbox" type="checkbox" name="basket" />
-        <span class="modal-order-checkbox-span">
-          <svg class="modal-order-icon" width="6" height="6">
-            <use href="./img/svg/icons.svg#icon-checkbox"></use>
-          </svg>
-        </span>
-      </label>
-    </fieldset>
-    <fieldset class="modal-order-group">
-      <input
-        class="modal-order-input modal-form-input"
-        type="text"
-        name="fullname"
-        placeholder="Enter full name..."
-      />
-      <input
-        class="modal-order-input modal-form-input"
-        type="email"
-        name="email"
-        placeholder="Enter email..."
-      />
-      <input
-        class="modal-order-input modal-form-input"
-        type="text"
-        name="card"
-        placeholder="Enter card.."
-      />
-      <textarea
-        class="modal-order-comments modal-form-input"
-        name="comments"
-        placeholder="Enter comments..."
-      ></textarea>
-    </fieldset>
-    <button class="modal-order-submit" type="submit">Submit</button>
+    <form name="signap-form">
+      <fieldset class="modal-order-group-basket">
+        <label class="modal-order-label strawberry">
+          <p class="modal-order-text">Strawberry Basket</p>
+          <span class="modal-order-plant">Plant</span>
+          <img
+            class="modal-order-img"
+            src="./img/modal-order/img-strawberry.png"
+            alt="Strawberry Basket"
+            width="88"
+            height="95"
+          />
+          <input class="modal-order-checkbox" type="checkbox" name="basket" />
+          <span class="modal-order-checkbox-span">
+            <svg class="modal-order-icon" width="6" height="6">
+              <use href="./img/svg/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="modal-order-label apple">
+          <p class="modal-order-text">Apple Basket</p>
+          <span class="modal-order-plant">Plant</span>
+          <img
+            class="modal-order-img"
+            src="./img/modal-order/img-apple.png"
+            alt="Apple Basket"
+            width="106"
+            height="95"
+          />
+          <input class="modal-order-checkbox" type="checkbox" name="basket" />
+          <span class="modal-order-checkbox-span">
+            <svg class="modal-order-icon" width="6" height="6">
+              <use href="./img/svg/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+        </label>
+        <label class="modal-order-label fruits">
+          <p class="modal-order-text">Fruits Basket</p>
+          <span class="modal-order-plant">Plant</span>
+          <img
+            class="modal-order-img"
+            src="./img/modal-order/img-fruits.png"
+            alt="Fruits Basket"
+            width="107"
+            height="95"
+          />
+          <input class="modal-order-checkbox" type="checkbox" name="basket" />
+          <span class="modal-order-checkbox-span">
+            <svg class="modal-order-icon" width="6" height="6">
+              <use href="./img/svg/icons.svg#icon-checkbox"></use>
+            </svg>
+          </span>
+        </label>
+      </fieldset>
+      <fieldset class="modal-order-group">
+        <label>
+          <input
+            class="modal-order-input modal-form-input"
+            type="text"
+            name="fullname"
+            placeholder="Enter full name..."
+          />
+        </label>
+        <label>
+          <input
+            class="modal-order-input modal-form-input"
+            type="email"
+            name="email"
+            placeholder="Enter email..."
+          />
+        </label>
+        <label>
+          <input
+            class="modal-order-input modal-form-input"
+            type="text"
+            name="card"
+            placeholder="Enter card.."
+          />
+        </label>
+        <label>
+          <textarea
+            class="modal-order-comments modal-form-input"
+            name="comments"
+            placeholder="Enter comments..."
+          ></textarea>
+        </label>
+      </fieldset>
+      <button class="modal-order-submit" type="submit" data-thank-you-open>
+        Submit
+      </button>
+    </form>
   </div>
 </div>
