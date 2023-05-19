@@ -12,7 +12,7 @@
     
     background-color: var(--color-bg-red);
     transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(100%);
+    transform: translateX(0);
 }
 
     .is-hiddeh.menu-container {
@@ -20,7 +20,7 @@
     }
 
 .is-hidden {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 
 .menu-hamburger-top {
