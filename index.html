@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
     
-    <script type="module" crossorigin src="/Work-flou1/assets/index-3324a6a3.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-4c25a6a6.css">
+    <script type="module" crossorigin src="/Work-flou1/assets/index-54bd73d8.js"></script>
+    <link rel="stylesheet" href="/Work-flou1/assets/index-33ee3296.css">
   </head>
   <body>
     <header class="header">
@@ -50,10 +50,9 @@
     <!-- Бургер-кнопка-меню -->
 
     <button
-      class="menu-toggle js-open-menu"
+      class="menu-toggle"
       type="button"
-      aria-expanded="false"
-      aria-controls="mobile-menu"
+      data-mobile-menu-open
     >
       <svg class="burger-icon" width="24" height="24">
         <use class="" href="/Work-flou1/assets/icons-371c0fd4.svg#burger-left"></use>
@@ -420,8 +419,8 @@
 </footer>
 
     
-    <div class="backdrop background-menu-hamburger is-hidden" mobile-burger-menu>
-    <div class="menu-container">
+    
+    <div class="menu-container is-hidden" data-mobile-menu>
         <div class="menu-hamburger-top">
             <a class="top-logo" href="./index.html">
                 <svg class="nav-logo" width="16" height="16">
@@ -429,7 +428,7 @@
                 </svg>
                 <span class="menu-hamburger-title">fresh harvest box</span>
             </a>
-            <button class="menu-btn close-btn" mobile-burger-menu-close>
+            <button class="menu-btn close-btn" data-mobile-menu-close>
                 <svg class="menu-close" width="24" height="24">
                   <use href="/Work-flou1/assets/icons-7cc7c82e.svg#icon-close"></use>
                 </svg>
@@ -452,7 +451,7 @@
             </svg>
         </button>
     </div>
-</div>
+
 
     <!-- Loads the specified .html file -->
 
