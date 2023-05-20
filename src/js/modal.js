@@ -40,6 +40,11 @@ document.addEventListener(
         document.body.classList.toggle('modal-open');
         modal.classList.toggle('is-hidden');
       }
+      // function toggleModal(evt) {
+      //   evt.preventDefault();
+      //   document.body.classList.toggle('modal-open');
+      //   modal.classList.toggle('is-hidden');
+      // }
     });
   },
   false
@@ -49,5 +54,3 @@ function logModalError(text) {
   const styles = 'color: #bada55';
   console.log('%c' + text, styles);
 }
-
-
