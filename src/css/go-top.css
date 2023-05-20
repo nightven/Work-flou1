@@ -1,41 +1,38 @@
 .go-top {
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    cursor: pointer;
-    display: none;
-    font-size: 20px;
-    color: #fff;
-    border: 1px solid #fff;
-    background-color: transparent;
-    padding: 15px 10px;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  cursor: pointer;
+  display: none;
+  font-size: 20px;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  padding: 15px 10px;
 }
-
 
 .go-top:hover {
-    color: rgba(0, 51, 153, 0.8);
-    border: 1px solid #fff;
-    background-color: rgba(0, 51, 153, 0.15);
+  color: rgba(0, 51, 153, 0.8);
+  border: 1px solid #fff;
+  background-color: rgba(0, 51, 153, 0.15);
 }
 
-
 .go-top--show {
-    display: block;
+  display: block;
 }
 
 .go-top-icon {
-    fill: currentColor;
+  fill: currentColor;
 }
 
 .go-top.btn {
-    color: red;
-    background-color: var(--color-green);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 40px;
-    height: 40px;
-    border: 1px solid red;
-    border-radius: 10px;
-    
+  color: red;
+  background-color: var(--color-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid red;
+  border-radius: 10px;
 }
