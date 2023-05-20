@@ -33,6 +33,13 @@
     <symbol id="youtube" viewBox="0 0 32 32">
       <path d="M24.24 6c-1.36-.08-4.16-.16-8.4-.16h-.56c-4.08 0-6.8.08-8.16.24-1.84.16-3.12.64-3.84 1.28-.64.56-1.12 1.6-1.28 2.96-.08.88-.16 2.72-.16 5.52v.4c0 2.64.08 4.48.24 5.36.24 1.28.64 2.24 1.44 2.8.8.64 2.16 1.04 4.08 1.2 1.36.08 4.16.16 8.4.16h.56c4.08 0 6.8-.08 8.16-.24 1.84-.16 3.12-.64 3.84-1.28.64-.56 1.12-1.6 1.28-2.96.08-.88.16-2.72.16-5.52v-.4c0-2.64-.08-4.48-.24-5.36-.24-1.28-.64-2.24-1.44-2.8-.8-.64-2.16-1.04-4.08-1.2zm-3.12 9.84-8.8 5.28V10.56l8.8 5.28z"/>
     </symbol>
+    <symbol id="icon-checkbox" viewBox="0 0 32 32">
+      <path d="M26.151 1.405c0.992-1.463 2.982-1.845 4.444-0.853s1.845 2.982 0.853 4.444l-17.356 25.6c-1.269 1.872-4.028 1.872-5.297 0l-8.244-12.16c-0.992-1.463-0.61-3.453 0.853-4.444s3.453-0.61 4.444 0.853l5.595 8.253 14.707-21.693z"></path>
+      </symbol>
+      <symbol id="modal-button" viewBox="0 0 32 32">
+      <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M24 8l-16 16"></path>
+      <path fill="none" stroke="#ae1332" style="stroke: var(--color1, #ae1332)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M8 8l16 16"></path>
+      </symbol>
   </defs>
 </svg>
 
