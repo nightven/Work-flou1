@@ -49,3 +49,5 @@ function logModalError(text) {
   const styles = 'color: #bada55';
   console.log('%c' + text, styles);
 }
+
+
