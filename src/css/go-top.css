@@ -1,7 +1,7 @@
 .go-top {
     position: fixed;
     right: 25px;
-    bottom: 50px;
+    bottom: 25px;
     cursor: pointer;
     display: none;
     font-size: 20px;
@@ -21,4 +21,21 @@
 
 .go-top--show {
     display: block;
+}
+
+.go-top-icon {
+    fill: currentColor;
+}
+
+.go-top.btn {
+    color: red;
+    background-color: var(--color-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    border-radius: 10px;
+    
 }
