@@ -101,17 +101,12 @@
 
 .contacts-img {
   border-radius: 20px;
-  background: url(pranav-madhu-HCIOaDV3w7g-unsplash.jpg);
 }
 
 @media only screen and (max-width: 767px) {
   .contacts-img {
     height: 476px;
   }
-}
- {
-  border-radius: 20px;
-  background: url(pranav-madhu-HCIOaDV3w7g-unsplash.jpg);
 }
 
 @media only screen and (max-width: 767px) {
