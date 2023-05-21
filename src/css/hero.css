@@ -31,14 +31,13 @@
   background-position: 10px 55px, 100% 0;
 
   background-repeat: no-repeat;
-  outline: 1px solid white;
 }
 
 @media only screen and (min-width: 768px) {
   .hero-section .container {
     background-image: url(../img/hero/banana_tab@1x.png),
       url(../img/hero/strawberry_tab@1x.png);
-    background-position: 12px 86px, 98% -26px;
+    background-position: 12px 86px, 98% -22px;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
@@ -56,7 +55,7 @@
     padding: 0 62px;
     background-image: url(../img/hero/banana_@1x.png),
       url(../img/hero/strawberry_@1x.png);
-    background-position: 18% 120px, 83% -26px;
+    background-position: 18% 120px, 83% -20px;
   }
 }
 
@@ -178,6 +177,9 @@
   text-transform: uppercase;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+.hero-right .hero-subtitle {
+  max-width: 163px;
+}
 /**
   |============================
   | center
@@ -259,6 +261,10 @@
     bottom: -18px;
     right: 38%;
   }
+}
+.btn-link:hover,
+.btn-link:focus {
+  color: var(--color-green);
 }
 /**
   |============================
