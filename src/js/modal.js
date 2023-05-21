@@ -16,7 +16,7 @@ document.addEventListener(
         `[${closeModalSelector}]`
       );
       const modal = document.querySelector(`[${element}]`);
-
+      //перевірка що змінна modal не пуста
       if (!modal) logModalError('Can`t find Modal with attribute ' + modal);
       if (openModalBtns.length === 0)
         logModalError(
@@ -32,9 +32,13 @@ document.addEventListener(
       openModalBtns.forEach(openBtn =>
         openBtn.addEventListener('click', toggleModal)
       );
+      // закриття модалки
       closeModalBtns.forEach(closeBtn =>
         closeBtn.addEventListener('click', toggleModal)
       );
+      // closeModalBtns.forEach(closeBtn =>
+      //   body.addEventListener('keyup', toggleModal)
+      // );
 
       function toggleModal() {
         document.body.classList.toggle('modal-open');
