@@ -1,89 +1,76 @@
-// звіритись чи все вірно зробили можна тут https://github.com/kashirin-olexsandr/multi-modal
-document.addEventListener(
-  'DOMContentLoaded',
-  function () {
-    // виберіть ваше меню тут
-    const modals = ['data-mobile-menu', 'data-order', 'data-thank-you'];
+document.addEventListener('DOMContentLoaded', function () {
+  // Модальні вікна
+  const modals = ['data-mobile-menu', 'data-order', 'data-thank-you'];
 
-    modals.forEach(element => {
-      // дл відкриття модалки на кнопку  додаємо атрибут "your-data-modal"-open
-      const openModalSelector = element + '-open';
-      // для закриття модалки на ваку кнопку додаємо атрибут "your-data-modal"-close
-      const closeModalSelector = element + '-close';
+  modals.forEach(element => {
+    const openModalSelector = `[${element}-open]`;
+    const closeModalSelector = `[${element}-close]`;
+    const openModalBtns = document.querySelectorAll(openModalSelector);
+    const closeModalBtns = document.querySelectorAll(closeModalSelector);
+    const modal = document.querySelector(`[${element}]`);
 
-      const openModalBtns = document.querySelectorAll(`[${openModalSelector}]`);
-      const closeModalBtns = document.querySelectorAll(
-        `[${closeModalSelector}]`
+    if (!modal) logModalError('Can`t find Modal with attribute ' + modal);
+    if (openModalBtns.length === 0)
+      logModalError(
+        'Can`t find Open modal button with attribute ' + openModalSelector
       );
-      const modal = document.querySelector(`[${element}]`);
-      //перевірка що змінна modal не пуста
-      if (!modal) logModalError('Can`t find Modal with attribute ' + modal);
-      if (openModalBtns.length === 0)
-        logModalError(
-          'Can`t find Open modal button with attribute ' + openModalSelector
-        );
-      if (closeModalBtns.length === 0)
-        logModalError(
-          'Can`t find Close modal button with attribute ' + closeModalSelector
-        );
-      if (!modal || openModalBtns.length === 0 || closeModalBtns.length === 0)
-        return;
-
-      openModalBtns.forEach(openBtn =>
-        openBtn.addEventListener('click', toggleModal)
+    if (closeModalBtns.length === 0)
+      logModalError(
+        'Can`t find Close modal button with attribute ' + closeModalSelector
       );
-      // закриття модалки
-      closeModalBtns.forEach(closeBtn =>
-        closeBtn.addEventListener('click', toggleModal)
-      );
-      // closeModalBtns.forEach(closeBtn =>
-      //   body.addEventListener('keyup', toggleModal)
-      // );
 
-      // function toggleModal() {
-      //   document.body.classList.toggle('modal-open');
-      //   modal.classList.toggle('is-hidden');
-      // }
-      function toggleModal(evt) {
-        evt.preventDefault();
-        document.body.classList.toggle('modal-open');
-        modal.classList.toggle('is-hidden');
-      }
-    });
-  },
-  false
-);
+    openModalBtns.forEach(openBtn =>
+      openBtn.addEventListener('click', toggleModal)
+    );
+    closeModalBtns.forEach(closeBtn =>
+      closeBtn.addEventListener('click', toggleModal)
+    );
 
+    function toggleModal(evt) {
+      evt.preventDefault();
+      document.body.classList.toggle('modal-open');
+      modal.classList.toggle('is-hidden');
+    }
+  });
 
-function logModalError(text) {
-  const styles = 'color: #bada55';
-  console.log('%c' + text, styles);
-}
-
-// мінімальна валідація формми
-const submitButton = document.querySelector('#submitButton');
-
-function validateForm(event) {
-  event.preventDefault();
-
-  const nameInput = document.querySelector('#name');
-  const emailInput = document.querySelector('#email');
+  // Валідація форми
+  const form = document.querySelector('#myForm');
+  const submitButton = document.querySelector('#submitButton');
+  const fullnameInput = document.querySelector('#fullname');
+  const emailInput = document.querySelector('#emailform');
   const cardInput = document.querySelector('#card');
+  const resetButton = document.querySelector('#resetButton');
 
-  // перевірка полів форми...
+  form.addEventListener('submit', validateForm);
+  fullnameInput.addEventListener('input', validateForm);
+  emailInput.addEventListener('input', validateForm);
+  cardInput.addEventListener('input', validateForm);
+  resetButton.addEventListener('click', resetForm);
 
-  // перевірка на те що поля не пусті
-  if (
-    nameInput.value.trim() === '' ||
-    emailInput.value.trim() === ''|| 
-    cardInput.value.trim() === ''
-  ) {
-    submitButton.disabled = true; // Деактивація кннопки submit
-    return;
+  function validateForm(event) {
+    event.preventDefault();
+
+    const nameValue = fullnameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+    const cardValue = cardInput.value.trim();
+
+    const emailPattern = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,})+$/;
+    const isEmailValid = emailPattern.test(emailValue);
+
+    if (nameValue === '' || !isEmailValid || cardValue === '') {
+      submitButton.disabled = true;
+    } else {
+      submitButton.disabled = false;
+    }
   }
 
-  // можна ще додати перевірку паттерна в js
+  function resetForm() {
+    form.reset();
+    submitButton.disabled = true;
+  }
 
-  // коли всі поля не пусті, тоді кнопка активна
-  submitButton.disabled = false;
-}
+  function logModalError(text) {
+    const styles = 'color: #bada55';
+    console.log('%c' + text, styles);
+  }
+});
