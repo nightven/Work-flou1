@@ -56,7 +56,7 @@
     padding: 0 62px;
     background-image: url(../img/hero/banana_@1x.png),
       url(../img/hero/strawberry_@1x.png);
-    background-position: 19% 126px, 85% -26px;
+    background-position: 18% 120px, 83% -26px;
   }
 }
 
@@ -90,7 +90,7 @@
     font-size: 64px;
     max-width: 910px;
     top: 0px;
-    right: 13%;
+    right: 14%;
   }
 }
 /**
@@ -105,11 +105,6 @@
   order: 2;
 }
 
-@media only screen and (min-width: 768px) {
-  .hero-left {
-    width: calc(100% - 142px) / 2;
-  }
-}
 @media only screen and (min-width: 1280px) {
   .hero-left {
     margin-top: 350px;
@@ -149,8 +144,11 @@
   line-height: 1.17;
   margin-bottom: 61px;
 }
-.list {
+
+.hero-right .text {
+  margin-bottom: 19px;
 }
+
 .wraper-left,
 .wraper-right {
   margin-bottom: 44px;
@@ -161,7 +159,7 @@
   height: 387px;
   background: #a4cb66;
   border-radius: 500px;
-  padding: 28px 25px 40px 24px;
+  padding: 28px 5px 40px 5px;
 }
 @media only screen and (min-width: 768px) {
   .wraper-left {
@@ -212,7 +210,7 @@
     linear-gradient(
         to top,
         rgba(255, 255, 255, 1),
-        rgba(255, 255, 255, 0.27),
+        rgba(255, 255, 255, 0.18),
         rgba(255, 255, 255, 0)
       )
       border-box;
@@ -221,6 +219,11 @@
 @media only screen and (min-width: 768px) {
   .hero-img {
     padding: 20px 17px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-img {
+    max-width: 486px;
   }
 }
 
@@ -279,6 +282,7 @@
   .hero-right {
     width: auto;
     margin-top: auto;
+    margin-bottom: 103px;
   }
 }
 .wraper-right {
@@ -291,12 +295,7 @@
     margin-right: auto;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .wraper-right {
-    margin-left: auto;
-    margin-right: 0;
-  }
-}
+
 .list-btn {
   margin-bottom: 44px;
   display: flex;
