@@ -8,7 +8,7 @@
     <!-- fav -->
 
     
-    <script type="module" crossorigin src="/Work-flou1/assets/index-64b53341.js"></script>
+    <script type="module" crossorigin src="/Work-flou1/assets/index-e808a1b4.js"></script>
     <link rel="stylesheet" href="/Work-flou1/assets/index-89711960.css">
   </head>
   <body>
@@ -579,6 +579,7 @@
             type="text"
             name="fullname"
             pattern="[a-zA-Z][a-zA-Z ]+"
+            id="name"
             required
             placeholder="Enter full name..."
           />
@@ -588,7 +589,9 @@
             class="modal-order-input modal-form-input"
             type="email"
             name="email"
+            id="email"
             pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            id="name"
             required
             placeholder="Enter email..."
           />
@@ -598,6 +601,7 @@
             class="modal-order-input modal-form-input"
             type="text"
             name="card"
+            id="card"
             pattern="[0-9]{10}"
             required
             placeholder="Enter card.."
@@ -614,6 +618,8 @@
       <button
         class="modal-order-submit"
         type="submit"
+        id="submitButton"
+        disabled
         data-order-close
         data-thank-you-open
       >
