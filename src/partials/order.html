@@ -1,7 +1,7 @@
 <div class="backdrop is-hidden" data-order>
   <div class="modal-order">
     <div class="wrap-button-title">
-      <p class="modal-order-title">Your Order</p>
+      <h2 class="modal-order-title">Your Order</h2>
       <button class="modal-order-button" data-order-close>
         <svg class="modal-order-button-icon">
           <use href="./img/svg/icons.svg#modal-button"></use>
@@ -11,7 +11,7 @@
     <form name="signap-form">
       <fieldset class="modal-order-group-basket">
         <label class="modal-order-label strawberry">
-          <p class="modal-order-text">Strawberry Basket</p>
+          <span class="modal-order-text">Strawberry Basket</span>
           <span class="modal-order-plant">Plant</span>
           <img
             srcset="
@@ -37,7 +37,7 @@
           </span>
         </label>
         <label class="modal-order-label apple">
-          <p class="modal-order-text">Apple Basket</p>
+          <span class="modal-order-text">Apple Basket</span>
           <span class="modal-order-plant">Plant</span>
           <img
             class="modal-order-img"
@@ -63,7 +63,7 @@
           </span>
         </label>
         <label class="modal-order-label fruits">
-          <p class="modal-order-text">Fruits Basket</p>
+          <span class="modal-order-text">Fruits Basket</span>
           <span class="modal-order-plant">Plant</span>
           <img
             class="modal-order-img"
@@ -128,7 +128,12 @@
           ></textarea>
         </label>
       </fieldset>
-      <button class="modal-order-submit" type="submit" data-thank-you-open>
+      <button
+        class="modal-order-submit"
+        type="submit"
+        data-order-close
+        data-thank-you-open
+      >
         Submit
       </button>
     </form>
