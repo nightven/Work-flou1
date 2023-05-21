@@ -54,36 +54,40 @@ document.addEventListener(
   false
 );
 
-
 function logModalError(text) {
   const styles = 'color: #bada55';
   console.log('%c' + text, styles);
 }
 
-// мінімальна валідація формми
-const submitButton = document.querySelector('#submitButton');
-
-function validateForm(event) {
-  event.preventDefault();
-
-  const nameInput = document.querySelector('#name');
-  const emailInput = document.querySelector('#email');
+document.addEventListener('DOMContentLoaded', function () {
+  const form = document.querySelector('#myForm');
+  const submitButton = document.querySelector('#submitButton');
+  const fullnameInput = document.querySelector('#fullname');
+  const emailInput = document.querySelector('#emailform');
   const cardInput = document.querySelector('#card');
 
-  // перевірка полів форми...
+  form.addEventListener('submit', validateForm);
+  fullnameInput.addEventListener('input', validateForm);
+  emailInput.addEventListener('input', validateForm);
+  cardInput.addEventListener('input', validateForm);
 
-  // перевірка на те що поля не пусті
-  if (
-    nameInput.value.trim() === '' ||
-    emailInput.value.trim() === ''|| 
-    cardInput.value.trim() === ''
-  ) {
-    submitButton.disabled = true; // Деактивація кннопки submit
-    return;
+  function validateForm(event) {
+    event.preventDefault();
+
+    const nameValue = fullnameInput.value.trim();
+    const emailValue = emailInput.value.trim();
+    const cardValue = cardInput.value.trim();
+
+    // Проверка наличия значения в поле электронной почты и валидация с использованием регулярного выражения
+    const emailPattern = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,})+$/;
+    const isEmailValid = emailPattern.test(emailValue);
+
+    if (nameValue === '' || !isEmailValid || cardValue === '') {
+      submitButton.disabled = true;
+    } else {
+      submitButton.disabled = false;
+      // Очистка значений полей
+      form.reset();
+    }
   }
-
-  // можна ще додати перевірку паттерна в js
-
-  // коли всі поля не пусті, тоді кнопка активна
-  submitButton.disabled = false;
-}
+});
