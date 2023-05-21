@@ -40,15 +40,15 @@ document.addEventListener(
       //   body.addEventListener('keyup', toggleModal)
       // );
 
-      function toggleModal() {
-        document.body.classList.toggle('modal-open');
-        modal.classList.toggle('is-hidden');
-      }
-      // function toggleModal(evt) {
-      //   evt.preventDefault();
+      // function toggleModal() {
       //   document.body.classList.toggle('modal-open');
       //   modal.classList.toggle('is-hidden');
       // }
+      function toggleModal(evt) {
+        evt.preventDefault();
+        document.body.classList.toggle('modal-open');
+        modal.classList.toggle('is-hidden');
+      }
     });
   },
   false
