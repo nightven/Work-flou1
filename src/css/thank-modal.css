@@ -12,6 +12,14 @@
   background: #e03f5e;
   border-radius: 20px;
 }
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .thank-wrapper {
+    width: 600px;
+    height: 545px;
+  }
+}
+
 .thank-button {
   position: absolute;
   top: 20px;
@@ -29,6 +37,12 @@
   background: #e03f5e;
   background-size: contain;
 }
+@media only screen and (min-width: 768px) {
+  .thank-button {
+    width: 28px;
+    height: 28px;
+  }
+}
 .thank-close-btn {
   display: flex;
   text-align: center;
@@ -44,11 +58,20 @@
   pointer-events: none;
 }
 .thank-img {
+  width: 207px;
+  height: 176px;
   text-align: center;
 
   margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .thank-img {
+    width: 278px;
+    height: 239px;
+    margin-bottom: 28px;
+  }
 }
 .thank-title {
   margin-bottom: 14px;
@@ -67,8 +90,7 @@
 }
 .thank-text {
   font-family: 'DM Sans';
-  font-style: normal;
-  font-weight: 400;
+
   font-size: 14px;
   line-height: 18px;
   /* or 129% */
@@ -81,4 +103,10 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
   /* Inside auto layout */
+}
+@media only screen and (min-width: 768px) {
+  .thank-text {
+    width: 391px;
+    margin: 0 auto;
+  }
 }
