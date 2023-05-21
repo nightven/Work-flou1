@@ -54,7 +54,36 @@ document.addEventListener(
   false
 );
 
+
 function logModalError(text) {
   const styles = 'color: #bada55';
   console.log('%c' + text, styles);
+}
+
+// мінімальна валідація формми
+const submitButton = document.querySelector('#submitButton');
+
+function validateForm(event) {
+  event.preventDefault();
+
+  const nameInput = document.querySelector('#name');
+  const emailInput = document.querySelector('#email');
+  const cardInput = document.querySelector('#card');
+
+  // перевірка полів форми...
+
+  // перевірка на те що поля не пусті
+  if (
+    nameInput.value.trim() === '' ||
+    emailInput.value.trim() === ''|| 
+    cardInput.value.trim() === ''
+  ) {
+    submitButton.disabled = true; // Деактивація кннопки submit
+    return;
+  }
+
+  // можна ще додати перевірку паттерна в js
+
+  // коли всі поля не пусті, тоді кнопка активна
+  submitButton.disabled = false;
 }
