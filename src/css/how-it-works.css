@@ -173,6 +173,13 @@
     color: var(--color-white);
 }
 
+/* Responsive Works-Item-Title */
+@media screen and (max-width: 374px) {
+    .works-item-title {
+        font-size: 14px;
+    }
+}
+
 .works-item-title.first-item-title {
     background-color: var(--color-bg-red);
 }
