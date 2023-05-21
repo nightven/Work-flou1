@@ -11,13 +11,13 @@
 
     
     background-color: var(--color-bg-red);
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateX(100%);
+    transition: all 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateX(0);
 }
 
     
 .menu-container.is-hidden {
-    transform: translateX(0);
+    transform: translateX(100%);
   }
 
 .menu-hamburger-top {
@@ -39,13 +39,17 @@
     display: flex;
     align-items: center;
     gap: 8px;
-
+    
+}
+.nav-logo {
+    fill: var(--color-bg-red);
 }
 
 .menu-btn {
     background-color: transparent;
     border: none;
 }
+
 
 .close-btn {
     padding: 0;
@@ -93,10 +97,15 @@
     letter-spacing: -0.04em;
 }
 
-.basket-btn {
+.basket-btn-down {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    color: var(--color-white);
+}
+
+.icon-basket {
+    fill: currentColor;
 }
 
 .modal-open {

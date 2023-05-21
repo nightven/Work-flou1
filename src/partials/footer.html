@@ -1,24 +1,58 @@
 <footer class="footer-section">
   <div class="footer-container container">
     <div class="footer-img-thumb">
-      <img
-        class="footer-img"
-        srcset="
-          ./img/footer/footer-img-335.png 335w,
-          ./img/footer/footer-img-349.png 349w,
-          ./img/footer/footer-img-670.png 670w,
-          ./img/footer/footer-img-698.png 698w
-        "
-        sizes="(min-width: 1280px) 349px, (min-width: 375px) 335px, 100vw"
-        src="./img/footer/footer-img-349.png"
-        alt="the girl is holding bananas"
-        loading="lazy"
-      />
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/footer/footer-img-desc@1x.webp 1x,
+            ./img/footer/footer-img-desc@2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/footer/footer-img-desc@1x.png 1x,
+            ./img/footer/footer-img-desc@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/footer/footer-img-mob@1x.webp 1x,
+            ./img/footer/footer-img-mob@2x.webp 2x
+          "
+          type="image/webp"
+        />
+
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/footer/footer-img-mob@1x.png 1x,
+            ./img/footer/footer-img-mob@2x.png 2x
+          "
+          type="image/png"
+        />
+
+        <img
+          class="footer-img"
+          src="./img/footer/footer-img-desc@1x.png"
+          alt="the girl is holding bananas"
+          width="349"
+          height="179"
+          loading="lazy"
+        />
+      </picture>
+
       <a class="footer-logo" href="./index.html">
         <svg class="footer-logo-img" width="16" height="16">
-          <use href="./img/footer/footer-sprite.svg#icon-logo"></use>
+          <use href="./img/svg/icons.svg#logo"></use>
         </svg>
-        <span class="footer-logo-text">fresh harvest box</span> 
+        <span class="footer-logo-text">fresh harvest box</span>
       </a>
     </div>
     <ul class="footer-nav">
@@ -35,36 +69,60 @@
 
     <ul class="footer-socials">
       <li class="footer-socials-item">
-        <a class="footer-socials-link" href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener">
-          <svg class="footer-socials-img"  width="24" height="24">
-            <use href="./img/footer/footer-sprite.svg#icon-facebook"></use>
+        <a
+          class="footer-socials-link"
+          href="https://www.facebook.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
+          <svg class="footer-socials-img" width="24" height="24">
+            <use href="./img/svg/icons.svg#facebook"></use>
           </svg>
         </a>
       </li>
       <li class="footer-socials-item">
-        <a class="footer-socials-link" href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener">
+        <a
+          class="footer-socials-link"
+          href="https://www.instagram.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <svg class="footer-socials-img" width="24" height="24">
-            <use href="./img/footer/footer-sprite.svg#icon-instagram"></use>
+            <use href="./img/svg/icons.svg#instagram"></use>
           </svg>
         </a>
       </li>
       <li class="footer-socials-item">
-        <a class="footer-socials-link" href="https://www.youtube.com/" target="_blank" rel="noreferrer noopener">
+        <a
+          class="footer-socials-link"
+          href="https://www.youtube.com/"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           <svg class="footer-socials-img" width="24" height="24">
-            <use href="./img/footer/footer-sprite.svg#icon-youtube"></use>
+            <use href="./img/svg/icons.svg#youtube"></use>
           </svg>
         </a>
       </li>
     </ul>
     <ul class="footer-contacts">
       <li class="footer-contacts-item">
-        <a class="footer-contacts-link link" href="tel:+380684439426">+380 (68) 443-94-26</a>
+        <a class="footer-contacts-link link" href="tel:+380684439426"
+          >+380 (68) 443-94-26</a
+        >
       </li>
-        <li class="footer-contacts-item">
-          <a class="footer-contacts-link link" href="https://goo.gl/maps/kj35jBKf2ffBkgqM9">1678 S. Pioneer Road Salt Lake City UT 
-            84104</a>
+      <li class="footer-contacts-item">
+        <a
+          class="footer-contacts-link link"
+          href="https://goo.gl/maps/kj35jBKf2ffBkgqM9"
+          >1678 S. Pioneer Road Salt Lake City UT 84104</a
+        >
       </li>
     </ul>
-
+    <button class="go-top btn">
+      <svg class="go-top-icon" width="20" height="20">
+        <use href="./img/svg/icons.svg#icon-arrow-up"></use>
+      </svg>
+    </button>
   </div>
 </footer>
