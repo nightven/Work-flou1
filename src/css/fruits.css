@@ -196,6 +196,8 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
+  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite
+    both;
 }
 
 @media only screen and (min-width: 768px) {
@@ -207,13 +209,11 @@
   }
 }
 
-.button-name {
+/* .button-name {
   transform: rotate(-14deg);
-}
+} */
 
 .button-order-common {
-  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite
-    both;
 }
 
 .icon-arrow {
