@@ -11,28 +11,46 @@
       </svg>
     </button>
     <picture>
+      <!-- Изображение для мобильных устройств -->
+      <source
+        srcset="
+          ./img/modal/kisspng-juice-frutti-sm@1x.webp 1x,
+          ./img/modal/kisspng-juice-frutti-sm@1x.webp 2x
+        "
+        type="image/webp"
+        media="(max-width: 767px)"
+      />
       <source
         srcset="
           ./img/modal/kisspng-juice-frutti-sm@1x.png 1x,
           ./img/modal/kisspng-juice-frutti-sm@1x.png 2x
         "
-        media="(min-width: 320px)"
-        type="image/png"
+        media="(max-width: 767px)"
+      />
+
+      <!-- Изображение для десктопов -->
+      <source
+        srcset="
+          ./img/modal/kisspng-juice-frutti-lg@1x.webp 1x,
+          ./img/modal/kisspng-juice-frutti-lg@1x.webp 2x
+        "
+        type="image/webp"
       />
       <source
         srcset="
           ./img/modal/kisspng-juice-frutti-lg@1x.png 1x,
           ./img/modal/kisspng-juice-frutti-lg@1x.png 2x
         "
-        media="(min-width: 768px)"
-        type="image/png"
       />
+
+      <!-- Изображение по умолчанию -->
       <img
         src="./img/modal/kisspng-juice-frutti-sm@1x.png"
         alt="raspberry"
         class="thank-img"
       />
     </picture>
+
     <h3 class="thank-title">THANK YOU</h3>
     <p class="thank-text">
       Thank you for your order! Our team is preparing your box with fresh,
@@ -42,3 +60,4 @@
     </p>
   </div>
 </div>
+<picture> </picture>
