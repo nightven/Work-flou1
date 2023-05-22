@@ -8,8 +8,8 @@
     <!-- fav -->
 
     
-    <script type="module" crossorigin src="/Work-flou1/assets/index-360e8dc0.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-96a54b84.css">
+    <script type="module" crossorigin src="/Work-flou1/assets/index-d0eb96a0.js"></script>
+    <link rel="stylesheet" href="/Work-flou1/assets/index-baa9707b.css">
   </head>
   <body>
     <header class="header">
@@ -370,7 +370,7 @@
           required
           placeholder="Enter email..."
         />
-        <button type="submit" class="contacts-button" data-mobile-menu-open>
+        <button type="submit" class="contacts-button" data-thank-subscribe-open>
           Send
         </button>
       </form>
@@ -627,12 +627,51 @@
 
     <div class="backdrop-thank is-hidden" data-thank-you>
   <div class="thank-wrapper">
-    <div class="container">
+    <button
+      id="resetButton"
+      type="button"
+      class="thank-button"
+      data-thank-you-close
+    >
+      <svg class="thank-close-btn" width="24" height="24">
+        <use href="/Work-flou1/assets/icons-ba98baa0.svg#x-14"></use>
+      </svg>
+    </button>
+    <picture>
+      <source
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
+        media="(min-width: 320px)"
+        type="image/png"
+      />
+      <source
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 2x"
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+      <img
+        src="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png"
+        alt="raspberry"
+        class="thank-img"
+      />
+    </picture>
+    <h3 class="thank-title">THANK YOU</h3>
+    <p class="thank-text">
+      Thank you for your order! Our team is preparing your box with fresh,
+      delicious fruits and vegetables, and we'll deliver it straight to your
+      doorstep. We appreciate your business and look forward to providing you
+      with the best possible experience!
+    </p>
+  </div>
+</div>
+
+    <div class="backdrop-thank is-hidden" data-thank-subscribe>
+  <div class="thank-wrapper">
+    <div>
       <button
         id="resetButton"
         type="button"
         class="thank-button"
-        data-thank-you-close
+        data-thank-subscribe-close
       >
         <svg class="thank-close-btn" width="24" height="24">
           <use href="/Work-flou1/assets/icons-ba98baa0.svg#x-14"></use>
@@ -657,10 +696,8 @@
       </picture>
       <h3 class="thank-title">THANK YOU</h3>
       <p class="thank-text">
-        Thank you for your order! Our team is preparing your box with fresh,
-        delicious fruits and vegetables, and we'll deliver it straight to your
-        doorstep. We appreciate your business and look forward to providing you
-        with the best possible experience!
+        Thank you for your subscribe! Now you will recive all our latest news
+        and know all our promos!
       </p>
     </div>
   </div>
