@@ -1,15 +1,18 @@
-.section-fruits {
+
+.section-fruits .container {
+
   padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
-  .section-fruits {
+
+  .section-fruits .container {
     padding-bottom: 144px;
   }
 }
-
 @media only screen and (min-width: 1280px) {
-  .section-fruits {
+  .section-fruits .container {
+
     padding-bottom: 150px;
   }
 }
