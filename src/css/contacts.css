@@ -15,25 +15,26 @@
 }
 
 .section-contacts .container {
-  padding-top: 133px;
+  /* padding-top: 133px; */
+
   position: relative;
 }
 
 @media only screen and (min-width: 768px) {
   .section-contacts .container {
-    padding-top: 144px;
+    /* padding-top: 144px; */
   }
 }
 @media only screen and (min-width: 1280px) {
   .section-contacts .container {
-    padding-top: 239px;
+    /* padding-top: 239px; */
   }
 }
 .contacts-header {
   position: absolute;
   top: 80px;
+  max-width: 335px;
 
-  width: 335px;
   height: 96px;
 
   font-family: 'DM Sans';
@@ -51,12 +52,13 @@
   color: #ffffff;
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
+
 @media only screen and (min-width: 768px) {
   .contacts-header {
     top: 65px;
     left: 57px;
 
-    width: 648px;
+    max-width: 648px;
     height: 108px;
 
     font-weight: 500;
@@ -69,7 +71,7 @@
     top: 150px;
     left: 269px;
 
-    width: 740px;
+    max-width: 740px;
     height: 128px;
 
     font-size: 64px;
@@ -189,4 +191,8 @@
   background-color: rgba(157, 193, 98, 1);
   border-radius: 100px;
   border: transparent;
+}
+
+.contacts-button:hover {
+  background-color: rgb(52, 162, 52);
 }

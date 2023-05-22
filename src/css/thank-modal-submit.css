@@ -1,0 +1,130 @@
+.backdrop-thank {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(66, 67, 47, 0.5);
+  transition: opacity 500ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.thank-wrapper {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
+  padding-top: 40px;
+  width: 335px;
+  height: 426px;
+  background: #e03f5e;
+  border-radius: 20px;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.backdrop-thank.is-hidden .modal-order {
+  opacity: 0;
+  transform: translate(-50%) scale(0.2);
+}
+
+/* tablet */
+@media only screen and (min-width: 768px) {
+  .thank-wrapper {
+    width: 600px;
+    height: 545px;
+  }
+}
+
+.thank-button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+
+  border: none;
+  color: var(--color-white);
+  background: #e03f5e;
+  background-size: contain;
+}
+@media only screen and (min-width: 768px) {
+  .thank-button {
+    width: 28px;
+    height: 28px;
+  }
+}
+.thank-close-btn {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  stroke: currentColor;
+}
+
+.thank-img {
+  width: 207px;
+  height: 176px;
+  text-align: center;
+
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 768px) {
+  .thank-img {
+    width: 278px;
+    height: 239px;
+    margin-bottom: 28px;
+  }
+}
+.thank-title {
+  margin-bottom: 14px;
+  text-align: center;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 28px;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  color: var(--color-white);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+}
+.thank-text {
+  font-family: 'DM Sans';
+  width: 295px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 18px;
+  /* or 129% */
+
+  text-align: center;
+  letter-spacing: -0.04em;
+
+  color: var(--color-white);
+
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  /* Inside auto layout */
+}
+@media only screen and (min-width: 768px) {
+  .thank-text {
+    width: 391px;
+    margin: 0 auto;
+  }
+}
