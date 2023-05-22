@@ -37,6 +37,7 @@
 }
 
 .fruits-item-title {
+  margin-bottom: 7px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -50,8 +51,7 @@
 .fruits-item-type {
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
+  line-height: 1.29;
 
   letter-spacing: -0.02em;
 
@@ -66,8 +66,7 @@
   border-radius: 200px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
+  line-height: 1.29;
 
   display: flex;
   align-items: center;
@@ -85,6 +84,7 @@
   padding-right: 20px;
   padding-bottom: 24px;
   padding-left: 20px;
+  height: 465px;
 }
 
 @media only screen and (min-width: 768px) {
