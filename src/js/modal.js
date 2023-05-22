@@ -59,18 +59,28 @@ document.addEventListener('DOMContentLoaded', function () {
 
     if (nameValue === '' || !isEmailValid || cardValue === '') {
       submitButton.disabled = true;
+      submitButton.classList.add('inactive');
     } else {
       submitButton.disabled = false;
+      submitButton.classList.remove('inactive');
     }
   }
 
   function resetForm() {
     form.reset();
     submitButton.disabled = true;
+    submitButton.classList.add('inactive'); // Додавання класу для неактивної кнопки
   }
 
-  function logModalError(text) {
-    const styles = 'color: #bada55';
-    console.log('%c' + text, styles);
-  }
+  submitButton.addEventListener('mouseenter', function () {
+    if (submitButton.disabled) {
+      submitButton.style.borderColor = 'red'; // Зміна коліру рамки на червоний при наведенні на неактивну кнопку
+    }
+  });
+
+  submitButton.addEventListener('mouseleave', function () {
+    if (submitButton.disabled) {
+      submitButton.style.borderColor = ''; // Зняття стилів рамки при відведенні курсору
+    }
+  });
 });
