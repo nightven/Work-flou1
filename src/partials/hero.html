@@ -29,16 +29,47 @@
         <source
           media="(min-width: 1280px)"
           srcset="
-            ./img/hero/hero_desk@1x.jpg 1x,
-            ./img/hero/hero_desk@2x.jpg 2x
+            ./img/hero/hero_desk@1x.webp 1x,
+            ./img/hero/hero_desk@2x.webp 2x
           "
+          type="image/webp"
         />
         <source
-          media="(min-width: 768px)"
+          media="(min-width: 1280px)"
           srcset="
             ./img/hero/hero_desk@1x.jpg 1x,
             ./img/hero/hero_desk@2x.jpg 2x
           "
+          type="image/jpg"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            ./img/hero/hero_tab@1x.webp 1x,
+            ./img/hero/hero_tab@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="./img/hero/hero_tab@1x.jpg 1x, ./img/hero/hero_tab@2x.jpg 2x"
+          type="image/jpg"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero/hero_mobile@1x.webp 1x,
+            ./img/hero/hero_mobile@2x.webp 2x
+          "
+          type="image/webp"
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            ./img/hero/hero_mobile@1x.jpg 1x,
+            ./img/hero/hero_mobile@2x.jpg 2x
+          "
+          type="image/jpg"
         />
         <img
           class="hero-img"
