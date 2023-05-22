@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="/Work-flou1/assets/index-6001c3b4.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-458f62d7.css">
+    <link rel="stylesheet" href="/Work-flou1/assets/index-350e81b5.css">
   </head>
   <body>
     <header class="header">
@@ -373,7 +373,7 @@
           name="email"
           class="contacts-input"
           id="email"
-          pattern="[a-z0-9]+@[a-z0-9.-]+.[a-z]"
+          pattern="^[^\s@]+@[^\s@]+.[^\s@]+$"
           required
           placeholder="Enter email..."
         />
@@ -672,18 +672,34 @@
 </div>
 
     <div class="backdrop-thank is-hidden" data-thank-subscribe>
-  <div class="thank-wrapper">
+
+  <div class="thank-wrapper thank-contacts">
+
     <div>
       <button
         id="resetButton"
         type="button"
-        class="thank-button"
+
+        class="thank-button thank-button-contacts"
+
         data-thank-subscribe-close
       >
         <svg class="thank-close-btn" width="24" height="24">
           <use href="/Work-flou1/assets/icons-ba98baa0.svg#x-14"></use>
         </svg>
       </button>
+
+      <img
+        class="thank-contact-img"
+        srcset="/Work-flou1/assets/watermelon@2x-7e82da6f.png 2x"
+        src="./img/thank-subscribe/watermelon@1x.png 1x"
+        alt="watermelon"
+      />
+      <h3 class="thank-title">THANK YOU</h3>
+      <p class="thank-text">Thank you for your subscribe!</p>
+      <p class="thank-text">
+        Now you will recive all our latest news and know all our promos!
+
       <picture>
         <source
           srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
@@ -705,6 +721,7 @@
       <p class="thank-text">
         Thank you for your subscribe! Now you will recive all our latest news
         and know all our promos!
+
       </p>
     </div>
   </div>
@@ -740,6 +757,62 @@
       <use href="/Work-flou1/assets/icons-ba98baa0.svg#basket"></use>
     </svg>
   </button>
+</div>
+
+    <div class="backdrop-thank is-hidden" data-thank-subscribe>
+
+  <div class="thank-wrapper thank-contacts">
+
+    <div>
+      <button
+        id="resetButton"
+        type="button"
+
+        class="thank-button thank-button-contacts"
+
+        data-thank-subscribe-close
+      >
+        <svg class="thank-close-btn" width="24" height="24">
+          <use href="/Work-flou1/assets/icons-ba98baa0.svg#x-14"></use>
+        </svg>
+      </button>
+
+      <img
+        class="thank-contact-img"
+        srcset="/Work-flou1/assets/watermelon@2x-7e82da6f.png 2x"
+        src="./img/thank-subscribe/watermelon@1x.png 1x"
+        alt="watermelon"
+      />
+      <h3 class="thank-title">THANK YOU</h3>
+      <p class="thank-text">Thank you for your subscribe!</p>
+      <p class="thank-text">
+        Now you will recive all our latest news and know all our promos!
+
+      <picture>
+        <source
+          srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
+          media="(min-width: 320px)"
+          type="image/png"
+        />
+        <source
+          srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 2x"
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+        <img
+          src="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png"
+          alt="raspberry"
+          class="thank-img"
+        />
+      </picture>
+      <h3 class="thank-title">THANK YOU</h3>
+      <p class="thank-text">
+        Thank you for your subscribe! Now you will recive all our latest news
+        and know all our promos!
+
+      </p>
+    </div>
+  </div>
 </div>
 
 
