@@ -37,7 +37,16 @@
 }
 .menu-link:hover,
 .menu-link:focus {
+
+
   color: var(--color-green);
+
+  padding: 7px 0;
+  border-radius: 2px;
+  border-bottom: 2px solid var(--color-green);
+
+
+
 }
 
 .logo {
