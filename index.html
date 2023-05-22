@@ -8,6 +8,7 @@
     <!-- fav -->
 
     
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="/Work-flou1/assets/index-d0eb96a0.js"></script>
     <link rel="stylesheet" href="/Work-flou1/assets/index-dcd3201f.css">
   </head>
@@ -141,17 +142,17 @@
 
       <section class="works" id="how-it-works">
   <div class="container works-container">
-    <h2 class="h2-title works-title">
+    <h2 class="h2-title works-title" data-aos="zoom-in" data-aos-duration="750">
       To order your fruit basket, simply follow these easy steps
     </h2>
-    <p class="works-desc">
+    <p class="works-desc" data-aos="zoom-in" data-aos-duration="750">
       Our baskets are assembled with care and delivered straight to your
       doorstep, so you can enjoy the taste of fresh fruit without ever leaving
       your home. Whether you're looking for a healthy snack or a thoughtful
       gift, our fruit baskets are the perfect choice.
     </p>
     <ul class="works-list">
-      <li class="works-item">
+      <li class="works-item" data-aos="fade-up" data-aos-duration="750">
         <div class="works-item-wrapper">
           <h3 class="h3-title works-item-title first-item-title">First Step</h3>
           <p class="works-item-text">
@@ -160,7 +161,7 @@
           </p>
         </div>
       </li>
-      <li class="works-item">
+      <li class="works-item" data-aos="fade-up" data-aos-duration="1000">
         <div class="works-item-wrapper">
           <h3 class="h3-title works-item-title second-item-title">
             Second Step
@@ -170,7 +171,7 @@
           </p>
         </div>
       </li>
-      <li class="works-item">
+      <li class="works-item" data-aos="fade-up" data-aos-duration="1250">
         <div class="works-item-wrapper third-works-item-wrapper">
           <h3 class="h3-title works-item-title third-item-title">Third Step</h3>
           <p class="works-item-text third-works-item-text">
@@ -179,7 +180,11 @@
         </div>
       </li>
     </ul>
-    <div class="works-image-wrapper"></div>
+    <div
+      class="works-image-wrapper"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    ></div>
   </div>
 </section>
 
@@ -741,5 +746,9 @@
     <!-- Loads the specified .html file -->
 
     
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
