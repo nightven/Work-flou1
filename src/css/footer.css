@@ -4,11 +4,29 @@
     background-color: var(--color-white);
     color: var(--color-bg-red);
 }
-.footer-container{
 
+
+@media only screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+
+    justify-content: space-between;
+  }
 }
-.footer-img-thumb{
+
+@media only screen and (min-width: 1280px) {
+   .footer-right-side {
+    display: flex;
+  }
 }
+
+
+@media only screen and (min-width: 1280px) {
+    .footer-img-thumb{
+    margin-right: 243px;
+  }
+}
+
 .footer-img {
     margin-bottom: 20px;
 }
@@ -25,9 +43,7 @@
     margin-right: 8px;
     fill: var(--color-bg-red);
 }
-.footer-logo-text{
 
-}
 .footer-nav {
     display: flex;
     justify-content: center;
@@ -36,9 +52,21 @@
 
     margin-top: 24px;
     margin-bottom: 44px;
-
-    
 }
+
+@media only screen and (min-width: 768px) {
+    .footer-nav {     
+        margin-top: 80px;
+        margin-bottom: 0px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-nav{
+        margin-top: 84px;
+  }
+}
+
 .footer-nav-item {
     
 }
@@ -46,6 +74,7 @@
     text-transform: capitalize;
     line-height: 1.29;
 }
+
 .footer-socials {
     display: flex;
     justify-content: center;
@@ -53,6 +82,22 @@
 
     margin-bottom: 44px;
 }
+
+@media only screen and (min-width: 768px) {
+    .footer-socials {
+        justify-content: flex-start;
+        margin-top: 38px;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .footer-socials {
+        justify-content: flex-start;
+        margin-top: 0px;
+        margin-bottom: 40px;
+    }
+}
+
 .footer-socials-item {
 
 }
@@ -69,33 +114,50 @@
     transition: background-color 500ms linear;
 }
 
+@media only screen and (min-width: 1280px) {
+    .footer-socials-link {
+
+        width: 44px;
+        height: 44px;}
+}
+
 .footer-socials-link:hover,
 .footer-socials-link:focus {
     background-color: rgba(174, 19, 50, 0.1);
 }
+
 .footer-socials-img {
     display: block;
     fill: var(--color-bg-red);
 }
+
 .footer-contacts {
-    width: 143px;
+    max-width: 143px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 14px;
-
 
     font-size: 14px;
     line-height: 1.29;
     text-align: center;
+    font-style: normal;
     letter-spacing: -0.02em;
 }
-.footer-contacts-item{
 
-}
-.footer-contacts-link {
-/* display: block; */
-}
-.link {
+@media only screen and (min-width: 768px) {
+    .footer-contacts {
+        max-width: 180px;
+        gap: 20px;
+
+        font-size: 18px;
+        line-height: 1.33;
+        text-align: start;
+    }
+
+    .footer-address {
+        display: block;
+        width: 162px;
+    }
 }
