@@ -665,22 +665,34 @@
       </svg>
     </button>
     <picture>
+      <!-- Изображение для мобильных устройств -->
+      <source
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 2x"
+        type="image/webp"
+        media="(max-width: 767px)"
+      />
       <source
         srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
-        media="(min-width: 320px)"
-        type="image/png"
+        media="(max-width: 767px)"
+      />
+
+      <!-- Изображение для десктопов -->
+      <source
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-4740c7c6.webp 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-4740c7c6.webp 2x"
+        type="image/webp"
       />
       <source
         srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 2x"
-        media="(min-width: 768px)"
-        type="image/png"
       />
+
+      <!-- Изображение по умолчанию -->
       <img
         src="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png"
         alt="raspberry"
         class="thank-img"
       />
     </picture>
+
     <h3 class="thank-title">THANK YOU</h3>
     <p class="thank-text">
       Thank you for your order! Our team is preparing your box with fresh,
@@ -690,12 +702,12 @@
     </p>
   </div>
 </div>
+<picture> </picture>
 
     <div class="backdrop-thank is-hidden" data-thank-subscribe>
   <div class="thank-wrapper thank-contacts">
     <div>
       <button
-        id="resetButton"
         type="button"
         class="thank-button thank-button-contacts"
         data-thank-subscribe-close
@@ -708,6 +720,7 @@
       <img
         class="thank-contact-img"
         srcset="/Work-flou1/assets/watermelon@2x-7e82da6f.png 2x, /Work-flou1/assets/watermelon@1x-d962854d.png 1x"
+        src="/Work-flou1/assets/watermelon@1x-d962854d.png"
         alt="watermelon"
       />
       <h3 class="thank-title">THANK YOU</h3>
@@ -755,7 +768,6 @@
   <div class="thank-wrapper thank-contacts">
     <div>
       <button
-        id="resetButton"
         type="button"
         class="thank-button thank-button-contacts"
         data-thank-subscribe-close
@@ -768,6 +780,7 @@
       <img
         class="thank-contact-img"
         srcset="/Work-flou1/assets/watermelon@2x-7e82da6f.png 2x, /Work-flou1/assets/watermelon@1x-d962854d.png 1x"
+        src="/Work-flou1/assets/watermelon@1x-d962854d.png"
         alt="watermelon"
       />
       <h3 class="thank-title">THANK YOU</h3>
