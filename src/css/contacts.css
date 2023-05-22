@@ -1,5 +1,5 @@
 .section-contacts {
-  position: relative;
+  padding-top: 53px;
   padding-bottom: 80px;
 }
 
@@ -14,26 +14,23 @@
   }
 }
 
-.section-contacts .container {
-  /* padding-top: 133px; */
-
-  position: relative;
-}
-
 @media only screen and (min-width: 768px) {
-  .section-contacts .container {
-    /* padding-top: 144px; */
+  .section-contacts {
+    padding-top: 79px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .section-contacts .container {
-    /* padding-top: 239px; */
+  .section-contacts {
+    padding-top: 89px;
   }
+}
+.contacts {
+  position: relative;
 }
 .contacts-header {
   position: absolute;
-  top: 80px;
-  max-width: 335px;
+  top: -53px;
+  width: 335px;
 
   height: 96px;
 
@@ -55,10 +52,11 @@
 
 @media only screen and (min-width: 768px) {
   .contacts-header {
-    top: 65px;
-    left: 57px;
+    top: -78px;
+    left: 50%;
+    transform: translateX(-50%);
 
-    max-width: 648px;
+    width: 648px;
     height: 108px;
 
     font-weight: 500;
@@ -68,10 +66,9 @@
 }
 @media only screen and (min-width: 1280px) {
   .contacts-header {
-    top: 150px;
-    left: 269px;
+    top: -87px;
 
-    max-width: 740px;
+    width: 740px;
     height: 128px;
 
     font-size: 64px;
@@ -79,15 +76,20 @@
 }
 .contacts-list {
   display: flex;
+
+  margin-top: 53px;
 }
 @media only screen and (min-width: 768px) {
   .contacts-list {
     gap: 16px;
+
+    margin-top: 79px;
     margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .contacts-list {
+    margin-top: 89px;
     gap: 24px;
   }
 }
@@ -104,8 +106,12 @@
 .contacts-img {
   border-radius: 20px;
 }
-
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 320px) and (max-width: 374px) {
+  .contacts-img {
+    height: auto;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
   .contacts-img {
     height: 476px;
   }
@@ -191,8 +197,11 @@
   background-color: rgba(157, 193, 98, 1);
   border-radius: 100px;
   border: transparent;
+
+  transition: --var-1-animation;
 }
 
 .contacts-button:hover {
-  background-color: rgb(52, 162, 52);
+  background-color: var(--color-white);
+  color: var(--color-green);
 }
