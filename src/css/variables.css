@@ -8,4 +8,7 @@
 
   /* shadows */
   --var-1-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+
+  /* animation */
+  --var-1-animation: 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -1,26 +1,24 @@
 @media only screen and (max-width: 767px) {
-    .menu-container {
+  .menu-container {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     overflow: scroll;
-    
+
     z-index: 100;
 
-    
     background-color: var(--color-bg-red);
-    transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateX(100%);
-}
+  }
 
-    
-.menu-container.is-hidden {
+  .is-open {
     transform: translateX(0);
   }
 
-.menu-hamburger-top {
+  .menu-hamburger-top {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,37 +26,38 @@
     padding-left: 20px;
     padding-right: 20px;
 
-
     width: 100%;
     height: 50px;
 
     background-color: var(--color-white);
-}
+  }
 
-.top-logo {
+  .top-logo {
     display: flex;
     align-items: center;
     gap: 8px;
+  }
+  .nav-logo {
+    fill: var(--color-bg-red);
+  }
 
-}
-
-.menu-btn {
+  .menu-btn {
     background-color: transparent;
     border: none;
-}
+  }
 
-.close-btn {
+  .close-btn {
     padding: 0;
     width: 24px;
     height: 24px;
     color: var(--color-bg-red);
-}
+  }
 
-.menu-close {
-   stroke: currentColor; 
-}
+  .menu-close {
+    stroke: currentColor;
+  }
 
-.menu-hamburger-title {
+  .menu-hamburger-title {
     font-family: inherit;
     font-style: normal;
     font-weight: 700;
@@ -72,34 +71,39 @@
     text-transform: uppercase;
 
     color: var(--color-bg-red);
-}
+  }
 
-.menu-hamburger-list {
+  .menu-hamburger-list {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-.menu-hamburger-item {
+  .menu-hamburger-item {
     margin-bottom: 16px;
 
     font-family: inherit;
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 1.29x;
-       
+    line-height: 1.29;
+
     text-align: center;
     letter-spacing: -0.04em;
-}
+  }
 
-.basket-btn {
+  .basket-btn-down {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
+    color: var(--color-white);
+  }
 
-.modal-open {
+  .icon-basket {
+    fill: currentColor;
+  }
+
+  .modal-open {
     overflow: hidden;
   }
 }
@@ -109,4 +113,3 @@
     display: none;
   }
 }
-
