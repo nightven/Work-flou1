@@ -106,14 +106,14 @@
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 .thank-text {
+  margin: 0 auto;
+  width: 295px;
   font-family: 'DM Sans';
-
   font-size: 14px;
   line-height: 18px;
   /* or 129% */
 
   text-align: center;
-  letter-spacing: -0.04em;
 
   color: var(--color-white);
 

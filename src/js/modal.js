@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
 
+  function logModalError(text) {
+    const styles = 'color: #bada55';
+    console.log('%c' + text, styles);
+  }
+
   // Валідація форми
   const form = document.querySelector('#myForm');
   const submitButton = document.querySelector('#submitButton');
@@ -56,6 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const emailPattern = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,})+$/;
     const isEmailValid = emailPattern.test(emailValue);
+    submitButton.classList.add('inactive');
 
     if (nameValue === '' || !isEmailValid || cardValue === '') {
       submitButton.disabled = true;
@@ -83,4 +89,6 @@ document.addEventListener('DOMContentLoaded', function () {
       submitButton.style.borderColor = ''; // Зняття стилів рамки при відведенні курсору
     }
   });
+  // Перевірка стану форми при завантаженні сторінки
+  validateForm(new Event('input'));
 });
