@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Модальні вікна
-  const modals = ['data-mobile-menu', 'data-order', 'data-thank-you'];
+  const modals = ['data-thank-subscribe', 'data-order', 'data-thank-you'];
 
   modals.forEach(element => {
     const openModalSelector = `[${element}-open]`;

@@ -1,0 +1,11 @@
+.thank-contacts {
+  background-color: var(--color-green);
+  width: 550px;
+  height: 540px;
+}
+.thank-button-contacts {
+  background-color: var(--color-green);
+}
+.thank-contact-img {
+  margin: 0 auto;
+}
