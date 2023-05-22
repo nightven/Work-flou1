@@ -1,54 +1,86 @@
-
-<section class="section-contacts">
+<section class="section-contacts" id="contacts">
   <div class="container contacts">
     <h3 class="contacts-header">Fresh Harvest Box has got you covered</h3>
     <ul class="contacts-list">
       <li class="contacts-item">
         <picture>
-            <source
-             media="(min-width: 1280px)"
-             srcset="
+          <source
+            media="(min-width: 1280px)"
+            srcset="
               ./img/contacts/img-1@1x_desc.jpg 1x,
               ./img/contacts/img-1@2x_desc.jpg 2x
-            "/>
-            <source
+            "
+          />
+          <source
             media="(min-width: 768px)"
             srcset="
               ./img/contacts/img-1@1x_tab.jpg 1x,
               ./img/contacts/img-1@2x_tab.jpg 2x
-            "/>     
-            <img class="contacts-img" srcset="./img/contacts/img-1@1x_mob.jpg 1x, ./img/contacts/img-1@2x_mob.jpg 2x" src="./img/contacts/img-1@1x_mob.jpg" alt="melon" />
-            </picture>            
+            "
+          />
+          <img
+            class="contacts-img"
+            srcset="
+              ./img/contacts/img-1@1x_mob.jpg 1x,
+              ./img/contacts/img-1@2x_mob.jpg 2x
+            "
+            src="./img/contacts/img-1@1x_mob.jpg"
+            alt="melon"
+          />
+        </picture>
       </li>
       <li class="contacts-item contacts-item-hidden">
         <picture>
-            <source
-             media="(min-width: 1280px)"
-             srcset="
+          <source
+            media="(min-width: 1280px)"
+            srcset="
               ./img/contacts/img-2@1x_desc.jpg 1x,
-              ./img/contacts/img-2@2x_desc.jpg 2x"/></picture>
-            <source media="(min-width: 768px)"
+              ./img/contacts/img-2@2x_desc.jpg 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
             srcset="
               ./img/contacts/img-2@1x_tab.jpg 1x,
-              ./img/contacts/img-2@2x_tab.jpg 2x"/>
-            <source media="(max-width: 767px)"
+              ./img/contacts/img-2@2x_tab.jpg 2x
+            "
+          />
+          <img
+            class="contacts-img"
             srcset="
-              ./img/contacts/img-2@1x_mob.jpg 1x,
-              ./img/contacts/img-2@2x_mob.jpg 2x
-            "/>
-            <img class="contacts-img" srcset="./img/contacts/img-2@1x_tab.jpg 1x, ./img/contacts/img-2@2x_tab.jpg 2x" src="./img/contacts/img-2@1x_tab.jpg" alt="melon" />
-        </picture>        
-      </li> 
+              ./img/contacts/img-2@1x_tab.jpg 1x,
+              ./img/contacts/img-2@2x_tab.jpg 2x
+            "
+            src="./img/contacts/img-2@1x_tab.jpg"
+            alt="blueberry"
+          />
+        </picture>
+      </li>
     </ul>
     <div class="contacts-wrapper">
-      <p class="contacts-text">Our boxes are packed with delicious, nutritious fruits and vegetables, perfect for anyone looking to eat healthier or support local farmers. Order your box today and start enjoying the best that nature has to offer!
+      <p class="contacts-text">
+        Our boxes are packed with delicious, nutritious fruits and vegetables,
+        perfect for anyone looking to eat healthier or support local farmers.
+        Order your box today and start enjoying the best that nature has to
+        offer!
       </p>
       <form name="subscribe" class="contacts-form" autocomplete="on">
         <label class="visually-hidden" for="email">Email</label>
-        <input type="email" name="email" class="contacts-input" id="email" placeholder="Enter email..." />
-        <button type="submit" class="contacts-button" data-thank-you-open>Send</button>
+        <input
+          type="email"
+          name="email"
+          class="contacts-input"
+          id="email"
+
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+
+          required
+          placeholder="Enter email..."
+        />
+        <button type="submit" class="contacts-button" data-thank-subscribe-open>
+          Send
+        </button>
       </form>
     </div>
   </div>
-  
 </section>

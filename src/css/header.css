@@ -18,6 +18,14 @@
 
   /* gap: 16px; */
 }
+/* .menu > li {
+  padding: 5px 10px;
+}
+.menu > li:hover {
+  background-color: transparent;
+  border-radius: 20px;
+  outline: 1px solid green;
+} */
 
 .menu-font {
   font-size: 0.88rem;
@@ -29,9 +37,12 @@
   padding: 7px 8px;
   background-color: transparent;
 }
-
+.menu-link {
+  /* padding: 16px 10px; */
+}
 .menu-link:hover,
 .menu-link:focus {
+
   color: var(--color-green);
 
   border-radius: 20px;
@@ -48,6 +59,7 @@
 .menu-link:focus {
   color: #747bff;
   border-bottom: 3px solid #747bff;
+
 }
 
 .logo {

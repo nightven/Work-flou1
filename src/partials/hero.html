@@ -11,11 +11,11 @@
         a gift for a loved one, Fresh Harvest Box has got you covered.
       </p>
       <div class="wraper-left">
-        <span class="text">Fruit</span>
+        <h2 class="text">Fruit</h2>
         <img
+          srcset="./img/hero/img-1_desk@2x.png 2x"
           src="./img/hero/img-1_desk@1x.png"
           alt="watermelon"
-          width="200"
           height="172"
         />
         <p class="hero-subtitle">
@@ -28,11 +28,17 @@
       <picture>
         <source
           media="(min-width: 1280px)"
-          srcset="./img/hero/hero_desk@1x.jpg"
+          srcset="
+            ./img/hero/hero_desk@1x.jpg 1x,
+            ./img/hero/hero_desk@2x.jpg 2x
+          "
         />
         <source
           media="(min-width: 768px)"
-          srcset="./img/hero/hero_desk@1x.jpg"
+          srcset="
+            ./img/hero/hero_desk@1x.jpg 1x,
+            ./img/hero/hero_desk@2x.jpg 2x
+          "
         />
         <img
           class="hero-img"
@@ -42,16 +48,15 @@
         />
       </picture>
 
-      <a class="link btn-link" href="">Shop Now</a>
+      <a class="link btn-link" href="#fruits">Shop Now</a>
     </div>
     <div class="hero-right">
       <div class="wraper-right">
-        <span class="text">Fruit</span>
+        <h2 class="text">Fruit</h2>
         <img
+          srcset="./img/hero/img-2_desk@2x.png 2x"
           src="./img/hero/img-2_desk@1x.png"
           alt="strawberyy"
-          width="162"
-          height="194"
         />
         <p class="hero-subtitle">
           Sweet and juicy, strawberries are packed with vitamin C and
@@ -60,16 +65,16 @@
       </div>
       <ul class="list list-btn">
         <li class="hero-link-item">
-          <a href="#" class="link hero-link">#organic</a>
+          <h3 class="link hero-link">#organic</h3>
         </li>
         <li class="hero-link-item">
-          <a href="#" class="link hero-link hero-link-m">#Products</a>
+          <h3 class="link hero-link">#Products</h3>
         </li>
         <li class="hero-link-item">
-          <a href="#" class="link hero-link">#Basket</a>
+          <h3 class="link hero-link">#Basket</h3>
         </li>
         <li class="hero-link-item">
-          <a href="#" class="link hero-link hero-link-m">#Fruits</a>
+          <h3 class="link hero-link">#Fruits</h3>
         </li>
       </ul>
     </div>

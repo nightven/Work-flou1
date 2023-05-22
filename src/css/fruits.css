@@ -1,3 +1,18 @@
+.section-fruits {
+  padding-bottom: 80px;
+}
+
+@media only screen and (min-width: 768px) {
+  .section-fruits {
+    padding-bottom: 144px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .section-fruits {
+    padding-bottom: 150px;
+  }
+}
+
 .fruits-title {
   margin-bottom: 14px;
 
@@ -37,6 +52,7 @@
 }
 
 .fruits-item-title {
+  margin-bottom: 7px;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
@@ -48,10 +64,10 @@
 }
 
 .fruits-item-type {
+  margin-bottom: 4px;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
+  line-height: 1.29;
 
   letter-spacing: -0.02em;
 
@@ -66,8 +82,7 @@
   border-radius: 200px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 18px;
-  /* identical to box height, or 129% */
+  line-height: 1.29;
 
   display: flex;
   align-items: center;
@@ -85,13 +100,25 @@
   padding-right: 20px;
   padding-bottom: 24px;
   padding-left: 20px;
+  height: 465px;
 }
 
 @media only screen and (min-width: 768px) {
   .fruits-item {
     padding-right: 24px;
-
     padding-left: 24px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item {
+    padding-right: 47px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .fruits-item img {
+    margin-left: 23px;
   }
 }
 
@@ -168,9 +195,8 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-
-  transform: rotate(-14deg);
-  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
+  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite
+    both;
 }
 
 @media only screen and (min-width: 768px) {
@@ -180,6 +206,13 @@
     font-size: 18px;
     line-height: 1.33;
   }
+}
+
+/* .button-name {
+  transform: rotate(-14deg);
+} */
+
+.button-order-common {
 }
 
 .icon-arrow {
@@ -201,7 +234,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 14px;
-  margin-bottom: 30px;
+  margin-bottom: 44px;
   justify-content: center;
 }
 
@@ -213,6 +246,6 @@
 
 @media only screen and (min-width: 1280px) {
   .fruits-list {
-    margin-bottom: 44px;
+    gap: 24px;
   }
 }
