@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   // Модальні вікна
-  const modals = ['data-mobile-menu', 'data-order', 'data-thank-you'];
+  const modals = ['data-thank-subscribe', 'data-order', 'data-thank-you'];
 
   modals.forEach(element => {
     const openModalSelector = `[${element}-open]`;
@@ -32,6 +32,11 @@ document.addEventListener('DOMContentLoaded', function () {
       modal.classList.toggle('is-hidden');
     }
   });
+
+  function logModalError(text) {
+    const styles = 'color: #bada55';
+    console.log('%c' + text, styles);
+  }
 
   // Валідація форми
   const form = document.querySelector('#myForm');
