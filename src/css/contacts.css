@@ -5,23 +5,14 @@
 
 @media only screen and (min-width: 768px) {
   .section-contacts {
+    padding-top: 79px;
     padding-bottom: 144px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .section-contacts {
-    padding-bottom: 150px;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .section-contacts {
-    padding-top: 79px;
-  }
-}
-@media only screen and (min-width: 1280px) {
-  .section-contacts {
     padding-top: 89px;
+    padding-bottom: 150px;
   }
 }
 .contacts {
@@ -30,7 +21,7 @@
 .contacts-header {
   position: absolute;
   top: -53px;
-  width: 335px;
+  max-width: 335px;
 
   height: 96px;
 
@@ -58,6 +49,7 @@
 
     width: 648px;
     height: 108px;
+    max-width: none;
 
     font-weight: 500;
     font-size: 54px;
@@ -76,20 +68,15 @@
 }
 .contacts-list {
   display: flex;
-
-  margin-top: 53px;
 }
 @media only screen and (min-width: 768px) {
   .contacts-list {
     gap: 16px;
-
-    margin-top: 79px;
     margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .contacts-list {
-    margin-top: 89px;
     gap: 24px;
   }
 }
@@ -198,7 +185,8 @@
   border-radius: 100px;
   border: transparent;
 
-  transition: --var-1-animation;
+  transition: background-color var(--var-1-animation),
+    color var(--var-1-animation);
 }
 
 .contacts-button:hover {

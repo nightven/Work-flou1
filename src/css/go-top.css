@@ -3,36 +3,27 @@
   right: 25px;
   bottom: 25px;
   cursor: pointer;
-  display: none;
   font-size: 20px;
+  padding: 11px;
   color: #fff;
-  border: 1px solid #fff;
-  background-color: transparent;
-  padding: 15px 10px;
+  background-color: #edd251;
+  border: none;
+  border-radius: 40px;
 }
 
 .go-top:hover {
-  color: rgba(0, 51, 153, 0.8);
-  border: 1px solid #fff;
-  background-color: rgba(0, 51, 153, 0.15);
+  background-color: #f8766b;
+}
+.go-top {
+  display: none;
 }
 
 .go-top--show {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .go-top-icon {
   fill: currentColor;
-}
-
-.go-top.btn {
-  color: red;
-  background-color: var(--color-green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border: 1px solid red;
-  border-radius: 10px;
 }

@@ -28,6 +28,7 @@
   padding: 7px 8px;
   background-color: transparent;
 
+
   transition: color var(--var-1-animation), border var(--var-2-animation);
 }
 
