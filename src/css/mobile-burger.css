@@ -10,7 +10,7 @@
     z-index: 100;
 
     background-color: var(--color-bg-red);
-    transition: transform 400ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: transform var(--var-1-animation);
     transform: translateX(100%);
   }
 
