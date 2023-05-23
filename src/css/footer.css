@@ -25,7 +25,10 @@
     .footer-img-thumb{
     margin-right: 243px;
   }
+  
 }
+
+
 
 .footer-img {
     margin-bottom: 20px;
@@ -75,6 +78,15 @@
     line-height: 1.29;
 }
 
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+    color: var(--color-green);
+
+    padding: 7px 0;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--color-green);
+}
+
 .footer-socials {
     display: flex;
     justify-content: center;
@@ -111,7 +123,7 @@
     border: 1px solid #AE1332;
     border-radius: 10px;
 
-    transition: background-color 500ms linear;
+    transition: background-color var(--var-1-animation);
 }
 
 @media only screen and (min-width: 1280px) {
@@ -160,4 +172,13 @@
         display: block;
         width: 162px;
     }
+}
+
+.footer-contacts-link:hover,
+.footer-contacts-link:focus {
+    color: var(--color-green);
+
+    padding-bottom: 7px;
+    border-radius: 2px;
+    border-bottom: 2px solid var(--color-green);
 }
