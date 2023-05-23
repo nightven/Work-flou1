@@ -1,5 +1,4 @@
 .section-contacts {
-  padding-top: 53px;
   padding-bottom: 80px;
 }
 
@@ -15,6 +14,7 @@
     padding-bottom: 150px;
   }
 }
+
 .contacts {
   position: relative;
 }
@@ -37,7 +37,8 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--color-white);
+
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
@@ -135,7 +136,8 @@
   line-height: 1.29;
   text-align: center;
   letter-spacing: -0.04em;
-  color: #ffffff;
+  color: var(--color-white);
+
   text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 }
 
@@ -157,7 +159,7 @@
 /* .contacts-input:focus {
 } */
 .contacts-input:not(:placeholder-shown):required:invalid {
-  border-color: red;
+  border-color: var(--color-bg-red);
 }
 .contacts-input:not(:placeholder-shown):required:valid {
   border-color: var(--color-green);
@@ -180,8 +182,8 @@
   letter-spacing: -0.04em;
   text-transform: capitalize;
 
-  color: white;
-  background-color: rgba(157, 193, 98, 1);
+  color: var(--color-white);
+  background-color: var(--color-green);
   border-radius: 100px;
   border: transparent;
 
