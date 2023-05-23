@@ -714,33 +714,27 @@
       </svg>
     </button>
     <picture>
-      <!-- Изображение для мобильных устройств -->
+      <!-- Изображение для таблет - десктопов -->
       <source
-        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 2x"
-        type="image/webp"
-        media="(max-width: 767px)"
-      />
-      <source
-        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
-        media="(max-width: 767px)"
-      />
-
-      <!-- Изображение для десктопов -->
-      <source
+        media="(min-width: 768px)"
         srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-4740c7c6.webp 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-4740c7c6.webp 2x"
-        type="image/webp"
       />
       <source
+        media="(min-width: 768px)"
         srcset="/Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 1x, /Work-flou1/assets/kisspng-juice-frutti-lg@1x-ce6e185a.png 2x"
       />
 
-      <!-- Изображение по умолчанию -->
+      <!-- Изображение для мобильных устройств -->
+      <source
+        media="(min-width: 320px)"
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-c02f28bd.webp 2x"
+      />
       <img
+        srcset="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 1x, /Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png 2x"
         src="/Work-flou1/assets/kisspng-juice-frutti-sm@1x-ab487b77.png"
         alt="raspberry"
         class="thank-img"
-        width="278px"
-        height="239px"
+        loading="lazy"
       />
     </picture>
 
