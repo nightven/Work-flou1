@@ -193,3 +193,8 @@
   background-color: var(--color-white);
   color: var(--color-green);
 }
+.contacts-button.inactive:hover,
+.contacts-button.inactive:focus {
+  border: 2px solid red;
+  cursor: not-allowed;
+}

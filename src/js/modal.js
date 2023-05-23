@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
     console.log('%c' + text, styles);
   }
 
-  // Валідація форми
+  // Валідація форми Ордер
   const form = document.querySelector('#myForm');
   const submitButton = document.querySelector('#submitButton');
   const fullnameInput = document.querySelector('#fullname');
@@ -91,4 +91,31 @@ document.addEventListener('DOMContentLoaded', function () {
   });
   // Перевірка стану форми при завантаженні сторінки
   validateForm(new Event('input'));
+
+  // Валідація форми підписки
+  const subfForm = document.querySelector('#subForm');
+  const subButtonSubscrible = document.querySelector('#subscribleButton');
+  const subEmailInput = document.querySelector('#subEmail');
+
+  subfForm.addEventListener('submit', validateFormSubscribe);
+  subEmailInput.addEventListener('input', validateFormSubscribe);
+
+  function validateFormSubscribe(event) {
+    event.preventDefault();
+    const subEmailValue = subEmailInput.value.trim();
+
+    const subEmailPattern = /^[\w.-]+@[a-zA-Z_-]+?(?:\.[a-zA-Z]{2,})+$/;
+    const isSubEmailValid = subEmailPattern.test(subEmailValue);
+    subButtonSubscrible.classList.add('inactive');
+
+    if (!isSubEmailValid) {
+      subButtonSubscrible.disabled = true;
+      subButtonSubscrible.classList.add('inactive');
+    } else {
+      subButtonSubscrible.disabled = false;
+      subButtonSubscrible.classList.remove('inactive');
+    }
+  }
+  //Перевірка стану форми при завантаженні сторінки
+  validateFormSubscribe(new Event('input'));
 });
