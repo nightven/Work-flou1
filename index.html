@@ -9,8 +9,8 @@
 
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script type="module" crossorigin src="/Work-flou1/assets/index-186343a8.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-f179c32c.css">
+    <script type="module" crossorigin src="/Work-flou1/assets/index-ae3bdc37.js"></script>
+    <link rel="stylesheet" href="/Work-flou1/assets/index-abdbb4c9.css">
   </head>
   <body>
     <header class="header">
@@ -380,18 +380,29 @@
         Order your box today and start enjoying the best that nature has to
         offer!
       </p>
-      <form name="subscribe" class="contacts-form" autocomplete="on">
+      <form
+        name="subscribe"
+        class="contacts-form"
+        autocomplete="on"
+        id="subForm"
+      >
         <label class="visually-hidden" for="email">Email</label>
         <input
           type="email"
           name="email"
           class="contacts-input"
-          id="email"
+          id="subEmail"
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
           required
           placeholder="Enter email..."
         />
-        <button type="submit" class="contacts-button" data-thank-subscribe-open>
+        <button
+          type="submit"
+          class="contacts-button"
+          data-thank-subscribe-open
+          id="subscribleButton"
+          disabled
+        >
           Send
         </button>
       </form>
