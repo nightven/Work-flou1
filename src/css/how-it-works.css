@@ -158,11 +158,11 @@
 }
 
 .works-item-title {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 136px;
-    height: 48px;
+    display: block;
+    text-align: center;
+    min-width: 136px;
+    min-height: 48px;
+    padding: 12px 18px;
 
     border-radius: 200px;
 
@@ -194,6 +194,7 @@
 
 .works-item-text {
     max-width: 145px;
+    height: auto;
 
     font-weight: 400;
     font-size: 14px;
