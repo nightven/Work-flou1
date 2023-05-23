@@ -325,5 +325,5 @@
 #submitButton.inactive:hover,
 #submitButton.inactive:focus {
   cursor: not-allowed;
-  border: 1px solid var(--color-bg-red);
+  border: 2px solid var(--color-bg-red);
 }
