@@ -173,9 +173,9 @@
   left: 290px;
   top: 134px;
 
-  width: 102px;
+  min-width: 102px;
   height: 48px;
-  padding: 15px 35px;
+  padding: 15px 32px;
   gap: 15px;
 
   font-size: 14px;
@@ -186,10 +186,10 @@
   color: var(--color-white);
   background-color: var(--color-green);
   border-radius: 100px;
-  border: transparent;
+  border: 2px solid transparent;
 
   transition: background-color var(--var-1-animation),
-    color var(--var-1-animation);
+    color var(--var-1-animation), border var(--var-1-animation);
 }
 
 .contacts-button:hover {
@@ -198,6 +198,7 @@
 }
 .contacts-button.inactive:hover,
 .contacts-button.inactive:focus {
-  border: 2px solid red;
+  border-color: red;
+  color: red;
   cursor: not-allowed;
 }

@@ -318,12 +318,24 @@
     height: 48px;
   }
 }
+#submitButton {
+  border: 2px solid transparent;
+  transition: border var(--var-1-animation), color var(--var-1-animation), background-color var(--var-1-animation);
+}
 #submitButton.inactive {
-  border-color: var(--color-bg-red);
   cursor: not-allowed;
 }
 #submitButton.inactive:hover,
 #submitButton.inactive:focus {
   cursor: not-allowed;
   border: 2px solid var(--color-bg-red);
+  color: red;
+  background-color: var(--color-white);
+}
+
+#submitButton:hover,
+#submitButton:focus {
+  border: 2px solid var(--color-green);
+  color: var(--color-green);
+  background-color: var(--color-white);
 }
