@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="/Work-flou1/assets/index-ae3bdc37.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-f5196696.css">
+    <link rel="stylesheet" href="/Work-flou1/assets/index-daee06fa.css">
   </head>
   <body>
     <header class="header">
@@ -71,12 +71,21 @@
       </p>
       <div class="wraper-left">
         <h2 class="text">Fruit</h2>
-        <img
-          srcset="/Work-flou1/assets/img-1_desk@2x-90ca3f05.png 2x"
-          src="/Work-flou1/assets/img-1_desk@1x-c97235b0.png"
-          alt="watermelon"
-          height="172"
-        />
+        <picture>
+          <source
+            srcset="/Work-flou1/assets/img-1_desk@1x-f2f71eb7.webp 1x, /Work-flou1/assets/img-1_desk@2x-1daf771d.webp 2x"
+            type="image/webp"
+          />
+
+          <img
+            srcset="/Work-flou1/assets/img-1_desk@2x-90ca3f05.png 2x"
+            src="/Work-flou1/assets/img-1_desk@1x-c97235b0.png"
+            alt="watermelon"
+            height="172"
+            loading="lazy"
+          />
+        </picture>
+
         <p class="hero-subtitle">
           Refreshing and juicy, watermelon is the perfect summer treat and a
           great source of hydration
@@ -120,6 +129,7 @@
           srcset="/Work-flou1/assets/hero_mobile@2x-40bbab60.jpg 2x"
           src="/Work-flou1/assets/hero_mobile@1x-bb83c0a9.jpg"
           alt="girl with orange"
+          loading="lazy"
         />
       </picture>
 
@@ -128,11 +138,19 @@
     <div class="hero-right">
       <div class="wraper-right">
         <h2 class="text">Fruit</h2>
-        <img
-          srcset="/Work-flou1/assets/img-2_desk@2x-181e5f88.png 2x"
-          src="/Work-flou1/assets/img-2_desk@1x-765c0992.png"
-          alt="strawberyy"
-        />
+        <picture>
+          <source
+            srcset="/Work-flou1/assets/img-2_desk@1x-c4c0d0a7.webp 1x, /Work-flou1/assets/img-2_desk@2x-cf9cfd5c.webp 2x"
+            type="image/webp"
+          />
+          <img
+            srcset="/Work-flou1/assets/img-2_desk@2x-181e5f88.png 2x"
+            src="/Work-flou1/assets/img-2_desk@1x-765c0992.png"
+            alt="strawberyy"
+            loading="lazy"
+          />
+        </picture>
+
         <p class="hero-subtitle">
           Sweet and juicy, strawberries are packed with vitamin C and
           antioxidants, making them a delicious and healthy snack
