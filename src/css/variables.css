@@ -5,10 +5,14 @@
   --color-green: #a4cb66;
   --color-yellow: #f5ce13;
   --color-white: #ffffff;
+  --color-blue: #4d5ae5;
 
   /* shadows */
   --var-1-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
 
   /* animation */
-  --var-1-animation: 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* For All Elements */
+  --var-1-animation: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* For Nav Elements */
+  --var-2-animation: 100ms cubic-bezier(0.4, 0, 0.2, 1);
 }

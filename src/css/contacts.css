@@ -1,14 +1,17 @@
 .section-contacts {
+  padding-top: 53px;
   padding-bottom: 80px;
 }
 
 @media only screen and (min-width: 768px) {
   .section-contacts {
+    padding-top: 79px;
     padding-bottom: 144px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .section-contacts {
+    padding-top: 89px;
     padding-bottom: 150px;
   }
 }
@@ -65,20 +68,15 @@
 }
 .contacts-list {
   display: flex;
-
-  margin-top: 53px;
 }
 @media only screen and (min-width: 768px) {
   .contacts-list {
     gap: 16px;
-
-    margin-top: 79px;
     margin-bottom: 80px;
   }
 }
 @media only screen and (min-width: 1280px) {
   .contacts-list {
-    margin-top: 89px;
     gap: 24px;
   }
 }
