@@ -10,7 +10,7 @@
     
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script type="module" crossorigin src="/Work-flou1/assets/index-ae3bdc37.js"></script>
-    <link rel="stylesheet" href="/Work-flou1/assets/index-c20ce02b.css">
+    <link rel="stylesheet" href="/Work-flou1/assets/index-22c3f46e.css">
   </head>
   <body>
     <header class="header">
@@ -590,15 +590,48 @@
         <label class="modal-order-label strawberry">
           <span class="modal-order-text">Strawberry Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            srcset="/Work-flou1/assets/img-strawberry1x-88-753047a1.png 88w, /Work-flou1/assets/img-strawberry1x-133-49ffd65f.png 133w, /Work-flou1/assets/img-strawberry1x-173-b1a87132.png 173w, /Work-flou1/assets/img-strawberry2x-176-9af61bb3.png 176w, /Work-flou1/assets/img-strawberry2x-266-2441deed.png 266w, /Work-flou1/assets/img-strawberry2x-346-258ea573.png 346w"
-            sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px, (min-width: 320px) 88px, 100vw "
-            class="modal-order-img strawberry-img"
-            src="/Work-flou1/assets/img-strawberry1x-173-b1a87132.png"
-            alt="Strawberry Basket"
-            width="173"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-strawberry@1x-deks-c3a1b822.webp 1x, /Work-flou1/assets/img-strawberry@2x-deks-85a35c74.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-strawberry1x-173-b1a87132.png 1x, /Work-flou1/assets/img-strawberry2x-346-258ea573.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-strawberry@1x-tab-33b6c079.webp 1x, /Work-flou1/assets/img-strawberry@2x-tab-c07ac6b3.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-strawberry1x-133-49ffd65f.png 1x, /Work-flou1/assets/img-strawberry2x-266-2441deed.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /Work-flou1/assets/img-strawberry@2x-mob-3faea14f.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/Work-flou1/assets/img-strawberry1x-88-753047a1.png 1x, /Work-flou1/assets/img-strawberry2x-176-9af61bb3.png 2x"
+              type="image/png"
+            />
+            <img
+              class="modal-order-img strawberry-img"
+              srcset="/Work-flou1/assets/img-strawberry2x-346-258ea573.png 2x"
+              src="./img/modal-order/img-strawberry1x-173.png.png"
+              alt="Strawberry Basket"
+              width="173"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
+
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
@@ -609,15 +642,47 @@
         <label class="modal-order-label apple">
           <span class="modal-order-text">Apple Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            class="modal-order-img"
-            srcset="/Work-flou1/assets/img-apple1x-106-a1a8c7b2.png 106w, /Work-flou1/assets/img-apple1x-172-803ad4a6.png 172w, /Work-flou1/assets/img-apple1x-229-c0aaafc8.png 229w, /Work-flou1/assets/img-apple2x-212-36f0a79d.png 212w, /Work-flou1/assets/img-apple2x-344-2744db51.png 344w, /Work-flou1/assets/img-apple2x-458-fa1b34ab.png 458w"
-            sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 320px) 106px, 100vw "
-            src="/Work-flou1/assets/img-apple1x-229-c0aaafc8.png"
-            alt="Apple Basket"
-            width="229"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-apple@1x-deks-ffd24eac.webp 1x, /Work-flou1/assets/img-apple@2x-deks-50c5ef12.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-apple1x-229-c0aaafc8.png 1x, /Work-flou1/assets/img-apple2x-458-fa1b34ab.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-apple@1x-tab-853343a7.webp 1x, /Work-flou1/assets/img-apple@2x-tab-68356114.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-apple1x-172-803ad4a6.png 1x, /Work-flou1/assets/img-apple2x-344-2744db51.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /Work-flou1/assets/img-apple@2x-mob-63de9b6e.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/Work-flou1/assets/img-apple1x-106-a1a8c7b2.png 1x, /Work-flou1/assets/img-apple2x-212-36f0a79d.png 2x"
+              type="image/png"
+            />
+            <img
+              class="modal-order-img"
+              srcset="/Work-flou1/assets/img-apple2x-458-fa1b34ab.png 2x"
+              src="/Work-flou1/assets/img-apple1x-229-c0aaafc8.png"
+              alt="Apple Basket"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
@@ -628,15 +693,47 @@
         <label class="modal-order-label fruits">
           <span class="modal-order-text">Fruits Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            class="modal-order-img"
-            srcset="/Work-flou1/assets/img-basket1x-107-bb896f45.png 107w, /Work-flou1/assets/img-basket1x-172-901f40f6.png 172w, /Work-flou1/assets/img-basket1x-229-34df55db.png 229w, /Work-flou1/assets/img-basket2x-214-d2bf3f5a.png 214w, /Work-flou1/assets/img-basket2x-344-cdf223c5.png 344w, /Work-flou1/assets/img-basket2x-458-007d65ac.png 458w"
-            sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 320px) 107px, 100vw "
-            src="/Work-flou1/assets/img-basket1x-229-34df55db.png"
-            alt="Fruits Basket"
-            width="229"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-fruits@1x-deks-02f79414.webp 1x, /Work-flou1/assets/img-fruits@2x-deks-13eeafcc.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="/Work-flou1/assets/img-basket1x-229-34df55db.png 1x, /Work-flou1/assets/img-basket2x-458-007d65ac.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-fruits@1x-tab-474f499d.webp 1x, /Work-flou1/assets/img-fruits@2x-tab-a6cf6236.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/Work-flou1/assets/img-basket1x-172-901f40f6.png 1x, /Work-flou1/assets/img-basket2x-344-cdf223c5.png 2x"
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="data:image/webp;base64,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 1x, /Work-flou1/assets/img-fruits@2x-mob-4091553a.webp 2x"
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/Work-flou1/assets/img-basket1x-107-bb896f45.png 1x, /Work-flou1/assets/img-basket2x-214-d2bf3f5a.png 2x"
+              type="image/png"
+            />
+            <img
+              class="modal-order-img"
+              srcset="/Work-flou1/assets/img-basket2x-458-007d65ac.png 2x"
+              src="/Work-flou1/assets/img-basket1x-229-34df55db.png"
+              alt="Fruits Basket"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
