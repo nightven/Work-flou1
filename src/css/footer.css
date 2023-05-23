@@ -78,7 +78,7 @@
     line-height: 1.29;
     padding: 7px 8px;
 
-    transition: color var(--var-1-animation), border var(--var-1-animation);
+    transition: color var(--var-2-animation), border var(--var-2-animation);
 }
 
 .footer-nav-link:hover,
