@@ -12,12 +12,24 @@
       </p>
       <div class="wraper-left">
         <h2 class="text">Fruit</h2>
-        <img
-          srcset="./img/hero/img-1_desk@2x.png 2x"
-          src="./img/hero/img-1_desk@1x.png"
-          alt="watermelon"
-          height="172"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/hero/img-1_desk@1x.webp 1x,
+              ./img/hero/img-1_desk@2x.webp 2x
+            "
+            type="image/webp"
+          />
+
+          <img
+            srcset="./img/hero/img-1_desk@2x.png 2x"
+            src="./img/hero/img-1_desk@1x.png"
+            alt="watermelon"
+            height="172"
+            loading="lazy"
+          />
+        </picture>
+
         <p class="hero-subtitle">
           Refreshing and juicy, watermelon is the perfect summer treat and a
           great source of hydration
@@ -76,6 +88,7 @@
           srcset="./img/hero/hero_mobile@2x.jpg 2x"
           src="./img/hero/hero_mobile@1x.jpg"
           alt="girl with orange"
+          loading="lazy"
         />
       </picture>
 
@@ -84,11 +97,22 @@
     <div class="hero-right">
       <div class="wraper-right">
         <h2 class="text">Fruit</h2>
-        <img
-          srcset="./img/hero/img-2_desk@2x.png 2x"
-          src="./img/hero/img-2_desk@1x.png"
-          alt="strawberyy"
-        />
+        <picture>
+          <source
+            srcset="
+              ./img/hero/img-2_desk@1x.webp 1x,
+              ./img/hero/img-2_desk@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <img
+            srcset="./img/hero/img-2_desk@2x.png 2x"
+            src="./img/hero/img-2_desk@1x.png"
+            alt="strawberyy"
+            loading="lazy"
+          />
+        </picture>
+
         <p class="hero-subtitle">
           Sweet and juicy, strawberries are packed with vitamin C and
           antioxidants, making them a delicious and healthy snack
