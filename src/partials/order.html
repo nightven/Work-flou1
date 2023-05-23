@@ -13,22 +13,66 @@
         <label class="modal-order-label strawberry">
           <span class="modal-order-text">Strawberry Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            srcset="
-              ./img/modal-order/img-strawberry1x-88.png   88w,
-              ./img/modal-order/img-strawberry1x-133.png 133w,
-              ./img/modal-order/img-strawberry1x-173.png 173w,
-              ./img/modal-order/img-strawberry2x-176.png 176w,
-              ./img/modal-order/img-strawberry2x-266.png 266w,
-              ./img/modal-order/img-strawberry2x-346.png 346w
-            "
-            sizes="(min-width: 1280px) 173px, (min-width: 768px) 133px, (min-width: 320px) 88px, 100vw "
-            class="modal-order-img strawberry-img"
-            src="./img/modal-order/img-strawberry1x-173.png"
-            alt="Strawberry Basket"
-            width="173"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-strawberry@1x-deks.webp 1x,
+                ./img/modal-order/img-strawberry@2x-deks.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-strawberry1x-173.png 1x,
+                ./img/modal-order/img-strawberry2x-346.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-strawberry@1x-tab.webp 1x,
+                ./img/modal-order/img-strawberry@2x-tab.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-strawberry1x-133.png 1x,
+                ./img/modal-order/img-strawberry2x-266.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-strawberry@1x-mob.webp 1x,
+                ./img/modal-order/img-strawberry@2x-mob.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-strawberry1x-88.png  1x,
+                ./img/modal-order/img-strawberry2x-176.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-order-img strawberry-img"
+              srcset="./img/modal-order/img-strawberry2x-346.png 2x"
+              src="./img/modal-order/img-strawberry1x-173.png.png"
+              alt="Strawberry Basket"
+              width="173"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
+
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
@@ -39,22 +83,65 @@
         <label class="modal-order-label apple">
           <span class="modal-order-text">Apple Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            class="modal-order-img"
-            srcset="
-              ./img/modal-order/img-apple1x-106.png 106w,
-              ./img/modal-order/img-apple1x-172.png 172w,
-              ./img/modal-order/img-apple1x-229.png 229w,
-              ./img/modal-order/img-apple2x-212.png 212w,
-              ./img/modal-order/img-apple2x-344.png 344w,
-              ./img/modal-order/img-apple2x-458.png 458w
-            "
-            sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 320px) 106px, 100vw "
-            src="./img/modal-order/img-apple1x-229.png"
-            alt="Apple Basket"
-            width="229"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-apple@1x-deks.webp 1x,
+                ./img/modal-order/img-apple@2x-deks.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-apple1x-229.png 1x,
+                ./img/modal-order/img-apple2x-458.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-apple@1x-tab.webp 1x,
+                ./img/modal-order/img-apple@2x-tab.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-apple1x-172.png 1x,
+                ./img/modal-order/img-apple2x-344.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-apple@1x-mob.webp 1x,
+                ./img/modal-order/img-apple@2x-mob.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-apple1x-106.png 1x,
+                ./img/modal-order/img-apple2x-212.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-order-img"
+              srcset="./img/modal-order/img-apple2x-458.png 2x"
+              src="./img/modal-order/img-apple1x-229.png"
+              alt="Apple Basket"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
@@ -65,22 +152,65 @@
         <label class="modal-order-label fruits">
           <span class="modal-order-text">Fruits Basket</span>
           <span class="modal-order-plant">Plant</span>
-          <img
-            class="modal-order-img"
-            srcset="
-              ./img/modal-order/img-basket1x-107.png 107w,
-              ./img/modal-order/img-basket1x-172.png 172w,
-              ./img/modal-order/img-basket1x-229.png 229w,
-              ./img/modal-order/img-basket2x-214.png 214w,
-              ./img/modal-order/img-basket2x-344.png 344w,
-              ./img/modal-order/img-basket2x-458.png 458w
-            "
-            sizes="(min-width: 1280px) 229px, (min-width: 768px) 172px, (min-width: 320px) 107px, 100vw "
-            src="./img/modal-order/img-basket1x-229.png"
-            alt="Fruits Basket"
-            width="229"
-            height="196"
-          />
+          <picture>
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-fruits@1x-deks.webp 1x,
+                ./img/modal-order/img-fruits@2x-deks.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 1280px)"
+              srcset="
+                ./img/modal-order/img-basket1x-229.png 1x,
+                ./img/modal-order/img-basket2x-458.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-fruits@1x-tab.webp 1x,
+                ./img/modal-order/img-fruits@2x-tab.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                ./img/modal-order/img-basket1x-172.png 1x,
+                ./img/modal-order/img-basket2x-344.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-fruits@1x-mob.webp 1x,
+                ./img/modal-order/img-fruits@2x-mob.webp 2x
+              "
+              type="image/webp"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="
+                ./img/modal-order/img-basket1x-107.png 1x,
+                ./img/modal-order/img-basket2x-214.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              class="modal-order-img"
+              srcset="./img/modal-order/img-basket2x-458.png 2x"
+              src="./img/modal-order/img-basket1x-229.png"
+              alt="Fruits Basket"
+              width="229"
+              height="196"
+              loading="lazy"
+            />
+          </picture>
           <input class="modal-order-checkbox" type="checkbox" name="basket" />
           <span class="modal-order-checkbox-span">
             <svg class="modal-order-icon" width="6" height="6">
