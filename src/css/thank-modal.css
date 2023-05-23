@@ -57,6 +57,12 @@
   color: var(--color-white);
   background: #e03f5e;
   background-size: contain;
+  transform: rotate(-180deg);
+  transition: transform var(--var-1-animation), color var(--var-1-animation);
+}
+.thank-button:hover {
+  transform: rotate(0deg);
+  color: #f47f4c;
 }
 @media only screen and (min-width: 768px) {
   .thank-button {
