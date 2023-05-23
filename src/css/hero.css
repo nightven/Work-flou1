@@ -371,10 +371,10 @@
   4%,
   8%,
   12% {
-    transform: rotate(-2deg);
+    transform: rotate(5deg);
   }
   16% {
-    transform: rotate(-2deg);
+    transform: rotate(0deg);
   }
 }
 .btn-link {
