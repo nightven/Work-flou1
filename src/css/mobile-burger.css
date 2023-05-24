@@ -10,7 +10,7 @@
     z-index: 100;
 
     background-color: var(--color-bg-red);
-    transition: transform var(--var-1-animation);
+    transition: transform var(--var-3-animation);
     transform: translateX(100%);
   }
 
@@ -51,6 +51,12 @@
     width: 24px;
     height: 24px;
     color: var(--color-bg-red);
+    transition: color var(--var-1-animation);
+  }
+
+  .close-btn:hover,
+  .close-btn:focus {
+    color: var(--color-yellow);
   }
 
   .menu-close {
@@ -92,11 +98,26 @@
     letter-spacing: -0.04em;
   }
 
+  .mobile-nav__link {
+    transition: color var(--var-1-animation);
+  }
+
+  .mobile-nav__link:hover,
+  .mobile-nav__link:focus {
+    color: var(--color-yellow)
+  }
+
   .basket-btn-down {
     display: block;
     margin-left: auto;
     margin-right: auto;
     color: var(--color-white);
+    transition: color var(--var-1-animation);
+  }
+
+  .basket-btn-down:hover,
+  .basket-btn-down:focus {
+    color: var(--color-yellow)
   }
 
   .icon-basket {
