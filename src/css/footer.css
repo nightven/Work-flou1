@@ -41,7 +41,15 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.29;
+    
+    transition: transform var(--var-1-animation);
 }
+
+.footer-logo:hover {
+  transform: scale(1.15);
+}
+
+
 .footer-logo-img {
     margin-right: 8px;
     fill: var(--color-bg-red);
@@ -67,6 +75,7 @@
 @media only screen and (min-width: 1280px) {
     .footer-nav{
         margin-top: 84px;
+        margin-bottom: auto;
   }
 }
 
@@ -90,13 +99,13 @@
 }
 
 .footer-nav-item:nth-child(2) .footer-nav-link:hover,
-.footer-nav-link:focus {
+.footer-nav-item:nth-child(2) .footer-nav-link:focus {
   color: var(--color-yellow);
   border-bottom: 3px solid var(--color-yellow);
 }
 
 .footer-nav-item:nth-child(3) .footer-nav-link:hover,
-.footer-nav-link:focus {
+.footer-nav-item:nth-child(3) .footer-nav-link:focus {
   color: #747bff;
   border-bottom: 3px solid #747bff;
 }
