@@ -123,6 +123,10 @@
 /* Tablet and > */
 
 @media only screen and (min-width: 768px) {
+  .header > .container {
+    padding-left: 24px;
+  }
+
   .header {
     padding: 11px 0;
   }
@@ -142,6 +146,10 @@
 
 /* Desktop and > */
 @media screen and (min-width: 1280px) {
+  .header > .container {
+    padding-left: 22px;
+  }
+
   .header-nav {
     margin-right: 322px;
   }
