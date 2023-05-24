@@ -195,8 +195,8 @@
   line-height: 1.29;
   letter-spacing: -0.04em;
   text-transform: uppercase;
-  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite
-    both;
+  animation: btn-link 7s cubic-bezier(0.455, 0.03, 0.515, 0.955) 1s infinite both;
+  transition: color var(--var-1-animation), background-color var(--var-1-animation);
 }
 
 @media only screen and (min-width: 768px) {
@@ -217,6 +217,7 @@
 
 .icon-arrow {
   fill: currentColor;
+  transform: rotate(14deg);
 }
 
 .button-order:hover,
