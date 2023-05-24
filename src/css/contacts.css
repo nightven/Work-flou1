@@ -160,7 +160,7 @@
 /* .contacts-input:focus {
 } */
 .contacts-input:not(:placeholder-shown):required:invalid {
-  border-color: var(--color-bg-red);
+  border-color: var(--color-red);
 }
 .contacts-input:not(:placeholder-shown):required:valid {
   border-color: var(--color-green);
@@ -198,7 +198,7 @@
 }
 .contacts-button.inactive:hover,
 .contacts-button.inactive:focus {
-  border-color: red;
-  color: red;
+  border-color: var(--color-red);
+  color: var(--color-red);
   cursor: not-allowed;
 }
