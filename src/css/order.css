@@ -94,6 +94,7 @@
 .modal-order-button {
   width: 24px;
   height: 24px;
+  padding: 0;
   border: none;
   background-color: var(--color-white);
   transform: scale(1);
@@ -275,7 +276,6 @@
   border-color: #ff0000;
   opacity: 1;
 }
-
 .modal-order-comments {
   display: block;
   max-width: 295px;
